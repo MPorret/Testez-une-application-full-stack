@@ -21,13 +21,18 @@
     "lib": [
       "es2020",
       "dom"
-    ]
-  },
+    ],  
+    "types": ["cypress"]
+  }, 
+   "include": [
+    "cypress/**/*.ts",
+    "cypress/support/index.d.ts"
+  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  },
-  "exclude": ["cypress"]
+  }
+
 }

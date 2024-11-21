@@ -2,6 +2,8 @@ package com.openclassrooms.starterjwt.controllers;
 
 import javax.validation.Valid;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -31,6 +33,7 @@ public class AuthController {
     private final JwtUtils jwtUtils;
     private final PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
+    private final Logger logger = LoggerFactory.getLogger(AuthController.class);
 
     AuthController(AuthenticationManager authenticationManager,
             PasswordEncoder passwordEncoder,
@@ -50,6 +53,7 @@ public class AuthController {
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
         String jwt = jwtUtils.generateJwtToken(authentication);
+        logger.info("JWT token: " + jwt);
         UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
 
         boolean isAdmin = false;

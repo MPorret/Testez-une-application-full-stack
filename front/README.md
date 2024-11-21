@@ -49,13 +49,9 @@ By default the admin account is:
 
 #### E2E
 
-Launching e2e test:
+Launching e2e test and generate coverage report :
 
-> npm run e2e
-
-Generate coverage report (you should launch e2e test before):
-
-> npm run e2e:coverage
+>ng run yoga:e2e
 
 Report is available here:
 
@@ -70,3 +66,4 @@ Launching test:
 for following change:
 
 > npm run test:watch
+

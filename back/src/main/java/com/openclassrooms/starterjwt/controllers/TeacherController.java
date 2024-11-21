@@ -1,10 +1,15 @@
 package com.openclassrooms.starterjwt.controllers;
 
+import com.openclassrooms.starterjwt.dto.SessionDto;
+import com.openclassrooms.starterjwt.dto.TeacherDto;
 import com.openclassrooms.starterjwt.mapper.TeacherMapper;
+import com.openclassrooms.starterjwt.models.Session;
 import com.openclassrooms.starterjwt.models.Teacher;
 import com.openclassrooms.starterjwt.services.TeacherService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 import java.util.List;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
@@ -42,4 +47,13 @@ public class TeacherController {
 
         return ResponseEntity.ok().body(this.teacherMapper.toDto(teachers));
     }
+
+    @PostMapping()
+    public ResponseEntity<?> create(@Valid @RequestBody TeacherDto teacherDto) {
+
+        Teacher teacher = this.teacherService.create(this.teacherMapper.toEntity(teacherDto));
+
+        return ResponseEntity.ok().body(this.teacherMapper.toDto(teacher));
+    }
+
 }

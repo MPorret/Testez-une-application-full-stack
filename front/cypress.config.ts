@@ -1,4 +1,17 @@
+//cypress.config.ts
 import { defineConfig } from 'cypress'
+const codeCoverage = require('@cypress/code-coverage/task');
+module.exports = defineConfig({
+  e2e: {
+    baseUrl: 'http://localhost:4200', // Remplacez par l'URL de votre application
+
+    setupNodeEvents(on, config) {
+      codeCoverage(on, config);
+      return config;
+    }
+  }
+});
+
 
 export default defineConfig({
   videosFolder: 'cypress/videos',

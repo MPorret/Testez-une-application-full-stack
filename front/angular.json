@@ -97,7 +97,8 @@
         "serve-coverage": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "yoga:build:e2e"
+            "browserTarget": "yoga:build:e2e",
+            "proxyConfig": "src/proxy.config.json"
           }
         },
         "extract-i18n": {
@@ -123,11 +124,13 @@
         "cypress-run": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "yoga:serve"
+            "devServerTarget": "yoga:serve-coverage",
+            "watch": true,
+            "headless": false
           },
           "configurations": {
             "production": {
-              "devServerTarget": "yoga:serve:production"
+              "devServerTarget": "yoga:serve-coverage:production"
             }
           }
         },

@@ -22,6 +22,8 @@ export class SessionApiService {
   }
 
   public delete(id: string): Observable<any> {
+    //return this.httpClient.get<Session>(`${this.pathService}/${id}`);
+
     return this.httpClient.delete(`${this.pathService}/${id}`);
   }
 
