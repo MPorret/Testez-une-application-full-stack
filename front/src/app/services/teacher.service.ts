@@ -8,9 +8,9 @@ import { Teacher } from '../interfaces/teacher.interface';
 })
 export class TeacherService {
 
-  private pathService = 'api/teacher';
+  private readonly pathService = 'api/teacher';
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private readonly httpClient: HttpClient) { }
 
   public all(): Observable<Teacher[]> {
     return this.httpClient.get<Teacher[]>(this.pathService);
