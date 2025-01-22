@@ -8,9 +8,9 @@ import { Session } from '../interfaces/session.interface';
 })
 export class SessionApiService {
 
-  private pathService = 'api/session';
+  private readonly pathService = 'api/session';
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private readonly httpClient: HttpClient) {
   }
 
   public all(): Observable<Session[]> {
