@@ -10,9 +10,9 @@ import { SessionInformation } from 'src/app/interfaces/sessionInformation.interf
 })
 export class AuthService {
 
-  private pathService = 'api/auth';
+  private readonly pathService = 'api/auth';
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private readonly httpClient: HttpClient) { }
 
   public register(registerRequest: RegisterRequest): Observable<void> {
     return this.httpClient.post<void>(`${this.pathService}/register`, registerRequest);
