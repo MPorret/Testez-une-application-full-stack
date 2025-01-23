@@ -24,7 +24,6 @@ describe('FormComponent', () => {
   let router: Router;
   let activatedRoute: ActivatedRoute;
   let sessionApiService: SessionApiService;
-  let matSnackBar: MatSnackBar;
   let sessionServiceMock: Partial<SessionService> = {
     sessionInformation: {
       token: 'token',
