@@ -80,6 +80,7 @@ describe('LoginComponent', () => {
 
     component.submit();
 
+    expect(component.onError).toBe(false);
     expect(routerSpy).toHaveBeenCalledWith(['/sessions']);
     expect(authServiceSpy).toHaveBeenCalledWith(loginRequest);
     expect(sessionServiceSpy).toHaveBeenCalledWith(sessionInfo);
