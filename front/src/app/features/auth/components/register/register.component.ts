@@ -47,17 +47,17 @@ export class RegisterComponent {
     ]
   });
 
-  constructor(private authService: AuthService,
-              private fb: FormBuilder,
-              private router: Router) {
+  constructor(private readonly authService: AuthService,
+    private readonly fb: FormBuilder,
+    private readonly router: Router) {
   }
 
   public submit(): void {
     const registerRequest = this.form.value as RegisterRequest;
     this.authService.register(registerRequest).subscribe({
-        next: (_: void) => this.router.navigate(['/login']),
-        error: _ => this.onError = true,
-      }
+      next: (_: void) => this.router.navigate(['/login']),
+      error: _ => this.onError = true,
+    }
     );
   }
 

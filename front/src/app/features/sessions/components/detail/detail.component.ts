@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Teacher } from '../../../../interfaces/teacher.interface';
@@ -24,13 +23,12 @@ export class DetailComponent implements OnInit {
   public userId: string;
 
   constructor(
-    private route: ActivatedRoute,
-    private fb: FormBuilder,
-    private sessionService: SessionService,
-    private sessionApiService: SessionApiService,
-    private teacherService: TeacherService,
-    private matSnackBar: MatSnackBar,
-    private router: Router) {
+    private readonly route: ActivatedRoute,
+    private readonly sessionService: SessionService,
+    private readonly sessionApiService: SessionApiService,
+    private readonly teacherService: TeacherService,
+    private readonly matSnackBar: MatSnackBar,
+    private readonly router: Router) {
     this.sessionId = this.route.snapshot.paramMap.get('id')!;
     this.isAdmin = this.sessionService.sessionInformation!.admin;
     this.userId = this.sessionService.sessionInformation!.id.toString();
@@ -48,9 +46,9 @@ export class DetailComponent implements OnInit {
     this.sessionApiService
       .delete(this.sessionId)
       .subscribe((_: any) => {
-          this.matSnackBar.open('Session deleted !', 'Close', { duration: 3000 });
-          this.router.navigate(['sessions']);
-        }
+        this.matSnackBar.open('Session deleted !', 'Close', { duration: 3000 });
+        this.router.navigate(['sessions']);
+      }
       );
   }
 

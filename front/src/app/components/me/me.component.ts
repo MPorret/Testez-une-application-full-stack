@@ -14,10 +14,10 @@ export class MeComponent implements OnInit {
 
   public user: User | undefined;
 
-  constructor(private router: Router,
-              private sessionService: SessionService,
-              private matSnackBar: MatSnackBar,
-              private userService: UserService) {
+  constructor(private readonly router: Router,
+    private readonly sessionService: SessionService,
+    private readonly matSnackBar: MatSnackBar,
+    private readonly userService: UserService) {
   }
 
   public ngOnInit(): void {

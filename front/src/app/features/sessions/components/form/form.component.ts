@@ -20,13 +20,13 @@ export class FormComponent implements OnInit {
   private id: string | undefined;
 
   constructor(
-    private route: ActivatedRoute,
-    private fb: FormBuilder,
-    private matSnackBar: MatSnackBar,
-    private sessionApiService: SessionApiService,
-    private sessionService: SessionService,
-    private teacherService: TeacherService,
-    private router: Router
+    private readonly route: ActivatedRoute,
+    private readonly fb: FormBuilder,
+    private readonly matSnackBar: MatSnackBar,
+    private readonly sessionApiService: SessionApiService,
+    private readonly sessionService: SessionService,
+    private readonly teacherService: TeacherService,
+    private readonly router: Router
   ) {
   }
 
