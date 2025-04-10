@@ -5631,7 +5631,7 @@
         "/Users/joffreyhernandez/Repository/OC/parcours-Angular_Java/P5-Full-Stack-testing/front/src/environments/environment.ts"
       ],
       "sourcesContent": [
-        "export const environment = {\n  baseUrl: 'localhost:8080/api/',\n  production: false\n};\n"
+        "export const environment = {\n  baseUrl: 'localhost:8094/api/',\n  production: false\n};\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
