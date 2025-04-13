@@ -8,12 +8,12 @@
         <h1>User information</h1>
       </div>
     </mat-card-title>
-    <mat-card-content>
-      <div *ngIf="user" fxLayout="column" fxLayoutAlign="start center">
-        <p>Name: {{ user.firstName }} {{ user.lastName | uppercase }}</p>
+    <mat-card-content data-testid="user-card">
+      <div *ngIf="user" fxLayout="column" fxLayoutAlign="start center" data-testid="user-informations">
+        <p data-testid="user-name">Name: {{ user.firstName }} {{ user.lastName | uppercase }}</p>
         <p>Email: {{ user.email }}</p>
-        <p *ngIf="user.admin" class="my2">You are admin</p>
-        <div *ngIf="!user.admin" fxLayout="column" class="my2" fxLayoutAlign="center center">
+        <p *ngIf="user.admin" class="my2" data-testid="user-admin">You are admin</p>
+        <div *ngIf="!user.admin" fxLayout="column" class="my2" fxLayoutAlign="center center" data-testid="user-delete">
           <p>Delete my account:</p>
           <button mat-raised-button color="warn" (click)="delete()">
             <mat-icon>delete</mat-icon>
