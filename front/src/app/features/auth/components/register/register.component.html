@@ -18,8 +18,8 @@
                     <input matInput placeholder="Password" formControlName="password">
                 </mat-form-field>
             </mat-card-content>
-            <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Submit</button>
-            <span *ngIf="onError" class="error ml2">An error occurred</span>
+            <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid" data-testid="register-invalid-form">Submit</button>
+            <span *ngIf="onError" class="error ml2" data-testid="register-error">An error occurred</span>
         </form>
     </mat-card>
 </div>
