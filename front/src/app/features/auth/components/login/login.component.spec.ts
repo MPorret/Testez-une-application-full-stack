@@ -8,6 +8,7 @@ import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 import { expect } from '@jest/globals';
+import "@testing-library/jest-dom/jest-globals";
 import { SessionService } from 'src/app/services/session.service';
 
 import { LoginComponent } from './login.component';
@@ -90,7 +91,6 @@ describe('LoginComponent', () => {
       component.submit()
       expect(authServiceMock.login).toBeCalledWith(formMock)
       expect(component.onError).toBe(true)
-
     })
   })
 
@@ -133,7 +133,7 @@ describe('LoginComponent', () => {
       authServiceMock.login.mockReturnValue(of({}));
       component.submit();
       await fixture.whenStable();
-      // Expect to be redirect to the login page
+      // Expect to be redirect to the login page 
       expect(location.path()).toBe('/sessions');
     })
 
