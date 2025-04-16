@@ -4,12 +4,12 @@
       <mat-card-title class="m0">Rentals available</mat-card-title>
       <button *ngIf="user!.admin" mat-raised-button color="primary" routerLink="create">
         <mat-icon>add</mat-icon>
-        <span class="ml1">Create</span>
+        <span class="ml1" data-testid="create-button">Create</span>
       </button>
     </mat-card-header>
     <div class="items mt2" fxLayout="row wrap" fxLayout.lt-md="column">
       <mat-card class="item" *ngFor="let session of (sessions$ | async)" fxFlex>
-        <mat-card-header>
+        <mat-card-header data-testid="session-card">
           <mat-card-title>{{ session.name }}</mat-card-title>
           <mat-card-subtitle>
             Session on {{ session.date | date: 'longDate'}}
