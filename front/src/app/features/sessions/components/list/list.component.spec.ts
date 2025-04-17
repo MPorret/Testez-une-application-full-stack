@@ -10,7 +10,6 @@ import { ListComponent } from './list.component';
 import { of } from 'rxjs';
 import { SessionApiService } from '../../services/session-api.service';
 import { getAllByTestId, getByTestId, queryByTestId } from '@testing-library/dom';
-import { Router, RouterModule } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 
 describe('ListComponent', () => {

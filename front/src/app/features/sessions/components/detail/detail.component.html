@@ -3,22 +3,22 @@
     <mat-card-title>
       <div fxLayout="row" fxLayoutAlign="space-between center">
         <div fxLayout="row" fxLayoutAlign="start center">
-          <button mat-icon-button (click)="back()">
+          <button mat-icon-button (click)="back()" data-testid="back-button">
             <mat-icon>arrow_back</mat-icon>
           </button>
           <h1>{{session.name | titlecase}}</h1>
         </div>
         <div>
-          <button *ngIf="isAdmin" mat-raised-button color="warn" (click)="delete()">
+          <button *ngIf="isAdmin" mat-raised-button color="warn" (click)="delete()" data-testid="delete-button">
             <mat-icon>delete</mat-icon>
             <span class="ml1">Delete</span>
           </button>
           <div *ngIf="!isAdmin">
-            <button *ngIf="!isParticipate" mat-raised-button color="primary" (click)="participate()">
+            <button *ngIf="!isParticipate" mat-raised-button color="primary" (click)="participate()" data-testid="participate-button">
               <mat-icon>person_add</mat-icon>
               <span class="ml1">Participate</span>
             </button>
-            <button *ngIf="isParticipate" mat-raised-button color="warn" (click)="unParticipate()">
+            <button *ngIf="isParticipate" mat-raised-button color="warn" (click)="unParticipate()" data-testid="unparticipate-button">
               <mat-icon>person_remove</mat-icon>
               <span class="ml1">Do not participate</span>
             </button>
@@ -34,7 +34,7 @@
         <mat-icon>
           people
         </mat-icon>
-        <span class="ml1">{{ teacher.firstName }} {{ teacher.lastName | uppercase }}</span>
+        <span class="ml1" data-testid="teacher-name">{{ teacher.firstName }} {{ teacher.lastName | uppercase }}</span>
       </div>
     </mat-card-subtitle>
     <div mat-card-image fxLayoutAlign="center center">
@@ -46,7 +46,7 @@
           <mat-icon>
             group
           </mat-icon>
-          <span class="ml1">{{ session.users.length }} attendees</span>
+          <span class="ml1" data-testid="number-attendees">{{ session.users.length }} attendees</span>
         </div>
         <div fxLayoutAlign="start center">
           <mat-icon>
