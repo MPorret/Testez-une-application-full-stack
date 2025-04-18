@@ -1,4 +1,3 @@
-import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
@@ -126,14 +125,14 @@ describe('LoginComponent', () => {
       router.initialNavigation();
     });
 
-    test('should navigate to login page after submit', async () => {
+    test('should navigate to sessions page after submit', async () => {
       // Complete form with correct informations
       component.form.setValue(formMock);
       // Simulate a succeed response
       authServiceMock.login.mockReturnValue(of({}));
       component.submit();
       await fixture.whenStable();
-      // Expect to be redirect to the login page 
+      // Expect to be redirect to the sessions page 
       expect(location.path()).toBe('/sessions');
     })
 

@@ -5,21 +5,21 @@
         <button mat-icon-button routerLink="/sessions">
           <mat-icon>arrow_back</mat-icon>
         </button>
-        <h1 *ngIf="!onUpdate">Create session</h1>
-        <h1 *ngIf="onUpdate">Update session</h1>
+        <h1 *ngIf="!onUpdate" data-testid="title">Create session</h1>
+        <h1 *ngIf="onUpdate" data-testid="title">Update session</h1>
       </div>
     </mat-card-title>
     <mat-card-content *ngIf="sessionForm">
       <form class="mt2" fxLayout="column" [formGroup]="sessionForm" (ngSubmit)="submit()">
         <mat-form-field appearance="outline" class="" fxFlex>
           <mat-label>Name</mat-label>
-          <input matInput formControlName="name">
+          <input matInput formControlName="name" data-testid="name">
         </mat-form-field>
         <mat-form-field appearance="outline" fxFlex>
           <mat-label>Date</mat-label>
-          <input matInput type="date" formControlName="date">
+          <input matInput type="date" formControlName="date" data-testid="date">
         </mat-form-field>
-        <mat-form-field appearance="outline">
+        <mat-form-field appearance="outline" data-testid="teacher">
           <mat-label>Teacher</mat-label>
           <mat-select ngDefaultControl formControlName="teacher_id">
             <mat-option *ngFor="let teacher of teachers$ | async" [value]="teacher.id">
@@ -29,10 +29,10 @@
         </mat-form-field>
         <mat-form-field appearance="outline" fxFlex>
           <mat-label>Description</mat-label>
-          <textarea matInput rows="8" formControlName="description"></textarea>
+          <textarea matInput rows="8" formControlName="description" data-testid="description" ></textarea>
         </mat-form-field>
         <div fxLayout="row" fxLayoutAlign="center center">
-          <button mat-raised-button color="primary" type="submit" [disabled]="sessionForm.invalid">
+          <button mat-raised-button color="primary" type="submit" [disabled]="sessionForm.invalid" data-testid="session-button">
             Save
           </button>
         </div>
