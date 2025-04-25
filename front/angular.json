@@ -154,7 +154,7 @@
         "e2e-ci": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "browser": "chrome",
+            "browser": "electron",
             "devServerTarget": "yoga:serve-coverage",
             "headless": true,
             "watch": false
