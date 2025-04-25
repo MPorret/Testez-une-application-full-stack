@@ -34,6 +34,7 @@ describe('Register spec', () => {
     it('Register failed, email already exist', () => {
       cy.intercept('POST', '/api/auth/register', {
         statusCode: 409,
+      error: 'email already exists'
       })
   
       cy.get('input[formControlName=firstName]').type("User")

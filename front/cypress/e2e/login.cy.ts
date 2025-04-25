@@ -32,6 +32,7 @@ describe('Login spec', () => {
   it('Login failed', () => {
     cy.intercept('POST', '/api/auth/login', {
       statusCode: 401,
+      error: 'email or password wrong'
     })
     cy.get('input[formControlName=email]').type("yoga@studio.com")
     cy.get('input[formControlName=password]').type(`${"test!12"}{enter}{enter}`)
