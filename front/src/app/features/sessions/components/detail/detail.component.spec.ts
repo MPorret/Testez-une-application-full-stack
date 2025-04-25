@@ -59,8 +59,8 @@ describe('DetailComponent', () => {
 
   const sessionApiServiceMock = {
     detail: jest.fn().mockReturnValue(of(sessionMock)),
-    participate: jest.fn().mockReturnValue(of()),
-    unParticipate: jest.fn().mockReturnValue(of()),
+    participate: jest.fn().mockReturnValue(of({})),
+    unParticipate: jest.fn().mockReturnValue(of({})),
     delete: jest.fn().mockReturnValue(of({})),
   }
 
@@ -130,10 +130,12 @@ describe('DetailComponent', () => {
     })
     
     test('should call participate', () => {
+      const fetchSessionSpy = jest.spyOn(component as any, "fetchSession");
       component.participate()
       expect(sessionApiServiceMock.participate).toBeCalledWith('42', '42')
       expect(sessionApiServiceMock.detail).toBeCalledWith('42');
       expect(teacherServiceMock.detail).toBeCalledWith(sessionMock.teacher_id.toString())
+      expect(fetchSessionSpy).toBeCalled()
 
       fixture.detectChanges()
       expect(component.teacher).toEqual(teacherMock)
@@ -142,10 +144,12 @@ describe('DetailComponent', () => {
     })
     
     test('should call unParticipate', () => {
+      const fetchSessionSpy = jest.spyOn(component as any,"fetchSession")
       component.unParticipate()
       expect(sessionApiServiceMock.unParticipate).toBeCalledWith('42', '42')
       expect(sessionApiServiceMock.detail).toBeCalledWith('42');
       expect(teacherServiceMock.detail).toBeCalledWith(sessionMock.teacher_id.toString())
+      expect(fetchSessionSpy).toBeCalled()
 
       fixture.detectChanges()
       expect(component.teacher).toEqual(teacherMock)
