@@ -72,6 +72,7 @@ describe('Sessions spec', () => {
         })
     
         it('List of sessions', () => {
+            cy.get('[data-testid=session-card]').should('have.length', 1)
             cy.get('[data-testid=session-card]').should('contain.text', session.name).and('contain.text', session.date.toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric' }))
             cy.get('mat-card-content').should('contain.text', session.description)
         })
