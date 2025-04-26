@@ -1,7 +1,9 @@
-/// <reference types="cypress" />
+import { Session } from "../../src/app/features/sessions/interfaces/session.interface"
+import { Teacher } from '../../src/app/interfaces/teacher.interface'
+import { SessionInformation } from '../../src/app/interfaces/sessionInformation.interface'
 
 describe('Sessions spec', () => {
-    const session = {
+    const session: Session = {
         id: 42,
         name: "Session",
         description: "Description of session",
@@ -12,12 +14,12 @@ describe('Sessions spec', () => {
         updatedAt: new Date()
     }
 
-    const sessionParticipate = {
+    const sessionParticipate: Session = {
         ...session,
         users: [1, 3, 18, 42],
     }
 
-    const admin = {
+    const admin: Partial<SessionInformation> = {
         id: 7,
         username: 'userName',
         firstName: 'firstName',
@@ -25,7 +27,7 @@ describe('Sessions spec', () => {
         admin: true
     }
 
-    const user = {
+    const user: Partial<SessionInformation> = {
         id: 1,
         username: 'userName',
         firstName: 'firstName',
@@ -33,7 +35,7 @@ describe('Sessions spec', () => {
         admin: false
     }
 
-    const teacher = {
+    const teacher: Teacher = {
         id: 7,
         lastName: 'Teacher',
         firstName: 'One',
@@ -145,8 +147,8 @@ describe('Sessions spec', () => {
             cy.get('[data-testid=number-attendees').should('contain.text', session.users.length.toString())
             cy.get('.description').should('contain.text', session.description)
             cy.get('[data-testid=session-date]').should('contain.text', session.date.toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric' }))
-            cy.get('.created').should('contain.text', session.createdAt.toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric' }))
-            cy.get('.updated').should('contain.text', session.updatedAt.toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric' }))
+            cy.get('.created').should('contain.text', session.createdAt!.toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric' }))
+            cy.get('.updated').should('contain.text', session.updatedAt!.toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric' }))
             cy.get('[data-testid=back-button').click()
             cy.url().should('eq', Cypress.config().baseUrl + 'sessions')  
         })

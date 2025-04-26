@@ -1,15 +1,22 @@
-/// <reference types="cypress" />
+import { Session } from "../../src/app/features/sessions/interfaces/session.interface";
 
 describe('Register spec', () => {
+  const session: Session = {
+    id: 42,
+    name: "Session",
+    description: "Description of session",
+    date: new Date(),
+    teacher_id: 7,
+    users: [3, 18, 42],
+    createdAt: new Date(),
+    updatedAt: new Date()
+  }
+
     beforeEach(() => {
       cy.visit('/register')
-  
-      cy.intercept(
-        {
-          method: 'GET',
-          url: '/api/session',
-        },
-        []).as('session')
+      cy.intercept('GET', '/api/session', {
+        body: [session]
+      })
     })
   
     it('Register successfull', () => {
