@@ -1,7 +1,7 @@
-/// <reference types="cypress" />
+import { Session } from "../../src/app/features/sessions/interfaces/session.interface";
 
 describe('Login spec', () => {
-  const session = {
+  const session: Session = {
     id: 42,
     name: "Session",
     description: "Description of session",

@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 import './register.cy'
 import './login.cy'
 import './account.cy'
