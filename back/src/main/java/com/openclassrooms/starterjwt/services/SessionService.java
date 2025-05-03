@@ -16,6 +16,7 @@ public class SessionService {
     private final SessionRepository sessionRepository;
 
     private final UserRepository userRepository;
+
     public SessionService(SessionRepository sessionRepository, UserRepository userRepository) {
         this.sessionRepository = sessionRepository;
         this.userRepository = userRepository;
