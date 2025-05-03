@@ -1,7 +1,8 @@
-package com.openclassrooms.starterjwt.services;
+package com.openclassrooms.starterjwt.services.ut;
 
 import com.openclassrooms.starterjwt.models.Teacher;
 import com.openclassrooms.starterjwt.repository.TeacherRepository;
+import com.openclassrooms.starterjwt.services.TeacherService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -17,6 +18,8 @@ import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 public class TeacherServiceTests {
+    private static final Long teacherId = 3L;
+
     @Mock
     TeacherRepository teacherRepository;
     @InjectMocks
@@ -27,7 +30,7 @@ public class TeacherServiceTests {
     @BeforeEach
     void init() {
         teacher = new Teacher();
-        teacher.setId(3L);
+        teacher.setId(teacherId);
     }
 
     @Test
@@ -40,17 +43,17 @@ public class TeacherServiceTests {
 
     @Test
     void findById_shouldCallFindById() {
-        when(teacherRepository.findById(3L)).thenReturn(Optional.ofNullable(teacher));
-        Teacher result = teacherService.findById(3L);
+        when(teacherRepository.findById(teacherId)).thenReturn(Optional.ofNullable(teacher));
+        Teacher result = teacherService.findById(teacherId);
         assertEquals(result, teacher);
-        verify(teacherRepository).findById(3L);
+        verify(teacherRepository).findById(teacherId);
     }
 
     @Test
     void findById_shouldThrowError_TeacherNotExists() {
-        when(teacherRepository.findById(3L)).thenReturn(Optional.empty());
-        Teacher result = teacherService.findById(3L);
+        when(teacherRepository.findById(teacherId)).thenReturn(Optional.empty());
+        Teacher result = teacherService.findById(teacherId);
         assertNull(result);
-        verify(teacherRepository).findById(3L);
+        verify(teacherRepository).findById(teacherId);
     }
 }
