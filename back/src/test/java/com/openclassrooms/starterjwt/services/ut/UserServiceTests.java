@@ -1,7 +1,8 @@
-package com.openclassrooms.starterjwt.services;
+package com.openclassrooms.starterjwt.services.ut;
 
 import com.openclassrooms.starterjwt.models.User;
 import com.openclassrooms.starterjwt.repository.UserRepository;
+import com.openclassrooms.starterjwt.services.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -18,6 +19,8 @@ import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 public class UserServiceTests {
+    private static final Long userId = 2L;
+
     @Mock
     UserRepository userRepository;
     @InjectMocks
@@ -28,28 +31,28 @@ public class UserServiceTests {
     @BeforeEach
     void init() {
         user = new User();
-        user.setId(2L);
+        user.setId(userId);
     }
 
     @Test
     void delete_shouldCallDeleteById(){
-        userService.delete(2L);
-        verify(userRepository).deleteById(2L);
+        userService.delete(userId);
+        verify(userRepository).deleteById(userId);
     }
 
     @Test
     void findById_shouldCallFindById(){
-        when(userRepository.findById(2L)).thenReturn(Optional.ofNullable(user));
-        User result = userService.findById(2L);
+        when(userRepository.findById(userId)).thenReturn(Optional.ofNullable(user));
+        User result = userService.findById(userId);
         assertEquals(result, user);
-        verify(userRepository).findById(2L);
+        verify(userRepository).findById(userId);
     }
 
     @Test
     void findById_shouldThrowError_UserNotExists(){
-        when(userRepository.findById(2L)).thenReturn(Optional.empty());
-        User result = userService.findById(2L);
+        when(userRepository.findById(userId)).thenReturn(Optional.empty());
+        User result = userService.findById(userId);
         assertNull(result);
-        verify(userRepository).findById(2L);
+        verify(userRepository).findById(userId);
     }
 }

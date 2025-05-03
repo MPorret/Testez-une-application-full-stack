@@ -1,7 +1,8 @@
-package com.openclassrooms.starterjwt.services;
+package com.openclassrooms.starterjwt.services.it;
 
 import com.openclassrooms.starterjwt.models.User;
 import com.openclassrooms.starterjwt.repository.UserRepository;
+import com.openclassrooms.starterjwt.services.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,7 +46,7 @@ public class UserServiceIT {
     @Test
     void testDelete_shouldDeleteUser() {
         userService.delete(userCreated.getId());
-        User userDeleted = userService.findById(userCreated.getId());
+        User userDeleted = userRepository.findById(userCreated.getId()).orElse(null);
         assertNull(userDeleted);
     }
 }
