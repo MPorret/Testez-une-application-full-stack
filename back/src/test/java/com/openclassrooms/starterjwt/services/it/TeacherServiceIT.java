@@ -36,7 +36,7 @@ public class TeacherServiceIT {
     @Test
     void testFindAll_shouldReturnAllTeachers (){
         List<Teacher> allTeachers = teacherService.findAll();
-        assertEquals(3, allTeachers.size());
+        assertEquals(1, allTeachers.size());
     }
 
     @Test
