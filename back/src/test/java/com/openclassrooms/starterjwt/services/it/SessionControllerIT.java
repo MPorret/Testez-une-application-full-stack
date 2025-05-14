@@ -9,6 +9,7 @@ import com.openclassrooms.starterjwt.models.User;
 import com.openclassrooms.starterjwt.repository.SessionRepository;
 import com.openclassrooms.starterjwt.repository.TeacherRepository;
 import com.openclassrooms.starterjwt.repository.UserRepository;
+import com.openclassrooms.starterjwt.security.jwt.JwtUtils;
 import com.openclassrooms.starterjwt.services.SessionService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,6 +17,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -31,11 +36,17 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
-@AutoConfigureMockMvc(addFilters = false)
+@AutoConfigureMockMvc
 @Transactional
 public class SessionControllerIT {
     @Autowired
     private MockMvc mockMvc;
+    @Autowired
+    private JwtUtils jwtUtils;
+    @Autowired
+    private AuthenticationManager authenticationManager;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
     @Autowired
     private ObjectMapper objectMapper;
     @Autowired
@@ -51,6 +62,23 @@ public class SessionControllerIT {
 
     private Session session;
     private Teacher teacher;
+    private String token;
+    private User user;
+
+    @BeforeEach
+    void initToken(){
+        User newUser = new User()
+                .setFirstName("User")
+                .setLastName("For test")
+                .setAdmin(false)
+                .setEmail("user@test.com")
+                .setPassword(passwordEncoder.encode("test1234"));
+
+        user = userRepository.saveAndFlush(newUser);
+
+        Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(user.getEmail(), "test1234"));
+        token = jwtUtils.generateJwtToken(authentication);
+    }
 
     @BeforeEach
     void init(){
@@ -69,7 +97,9 @@ public class SessionControllerIT {
 
     @Test
     void findById_shouldReturnSessionDetails_sessionExist() throws Exception {
-        mockMvc.perform(get("/api/session/" + session.getId()))
+        mockMvc.perform(get("/api/session/" + session.getId())
+                        .header("Authorization", "Bearer " + token)
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect((jsonPath("$.name")).value(session.getName()))
                 .andExpect((jsonPath("$.description")).value(session.getDescription()));
@@ -77,19 +107,25 @@ public class SessionControllerIT {
 
     @Test
     void findById_shouldReturnSNotFound_sessionNotExist() throws Exception {
-        mockMvc.perform(get("/api/session/168"))
+        mockMvc.perform(get("/api/session/168")
+                        .header("Authorization", "Bearer " + token)
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound());
     }
 
     @Test
     void findById_shouldReturnBadRequest_invalidId() throws Exception {
-        mockMvc.perform(get("/api/session/168L"))
+        mockMvc.perform(get("/api/session/168L")
+                        .header("Authorization", "Bearer " + token)
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isBadRequest());
     }
 
     @Test
     void findAll_shouldReturnAllSessions() throws Exception {
-        mockMvc.perform(get("/api/session"))
+        mockMvc.perform(get("/api/session")
+                        .header("Authorization", "Bearer " + token)
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect((jsonPath("$")).isArray());
     }
@@ -103,6 +139,7 @@ public class SessionControllerIT {
         newSession.setTeacher_id(teacher.getId());
 
         mockMvc.perform(post("/api/session")
+                        .header("Authorization", "Bearer " + token)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(newSession)))
                 .andExpect(status().isOk())
@@ -117,6 +154,7 @@ public class SessionControllerIT {
         sessionUpdated.setName("SessionUpdated");
 
         mockMvc.perform(put("/api/session/" + session.getId())
+                        .header("Authorization", "Bearer " + token)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(sessionUpdated)))
                 .andExpect(status().isOk())
@@ -129,6 +167,7 @@ public class SessionControllerIT {
         sessionUpdated.setName("SessionUpdated");
 
         mockMvc.perform(put("/api/session/168L")
+                        .header("Authorization", "Bearer " + token)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(sessionUpdated)))
                 .andExpect(status().isBadRequest());
@@ -136,7 +175,9 @@ public class SessionControllerIT {
 
     @Test
     void delete_shouldReturnOkResponse_idValid() throws Exception {
-        mockMvc.perform(delete("/api/session/" + session.getId()))
+        mockMvc.perform(delete("/api/session/" + session.getId())
+                        .header("Authorization", "Bearer " + token)
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
 
         assertNull(sessionRepository.findById(session.getId()).orElse(null));
@@ -144,45 +185,54 @@ public class SessionControllerIT {
 
     @Test
     void delete_shouldReturnBadRequestResponse_idInvalid() throws Exception {
-        mockMvc.perform(delete("/api/session/168L"))
+        mockMvc.perform(delete("/api/session/168L")
+                        .header("Authorization", "Bearer " + token)
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isBadRequest());
     }
 
     @Test
     void delete_shouldReturnNotFoundResponse_sessionNotExist() throws Exception {
-        mockMvc.perform(delete("/api/session/168"))
+        mockMvc.perform(delete("/api/session/168")
+                        .header("Authorization", "Bearer " + token)
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound());
     }
 
     @Test
-    void participate_shouldReturnOkResponse_userValid() throws Exception {
-        User user = userRepository.save(new User("user@test.com", "User", "Test", "test1234", false));
-
-        mockMvc.perform(post("/api/session/" + session.getId() + "/participate/" + user.getId()))
+    void participate_shouldReturnOkResponse() throws Exception {
+        mockMvc.perform(post("/api/session/" + session.getId() + "/participate/" + user.getId())
+                        .header("Authorization", "Bearer " + token)
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
 
         assertEquals(List.of(user), Objects.requireNonNull(sessionRepository.findById(session.getId()).orElse(null)).getUsers());
     }
 
     @Test
-    void participate_shouldReturnBadRequestResponse_userIdInvalid() throws Exception {
-        mockMvc.perform(post("/api/session/" + session.getId() + "/participate/168L"))
+    void participate_shouldReturnBadRequestResponse_sessionInvalid() throws Exception {
+        mockMvc.perform(post("/api/session/168L/participate/" + user.getId())
+                        .header("Authorization", "Bearer " + token)
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isBadRequest());
     }
 
     @Test
-    void participate_shouldReturnNotFoundResponse_userNotExist() throws Exception {
-        mockMvc.perform(post("/api/session/" + session.getId() + "/participate/168"))
+    void participate_shouldReturnNotFoundResponse_sessionNotExists() throws Exception {
+        mockMvc.perform(post("/api/session/168/participate/" + user.getId())
+                        .header("Authorization", "Bearer " + token)
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound());
     }
 
     @Test
-    void noLongerParticipate_shouldReturnOkResponse_userValid() throws Exception {
-        User user = userRepository.save(new User("user@test.com", "User", "Test", "test1234", false));
+    void noLongerParticipate_shouldReturnOkResponse() throws Exception {
         session.getUsers().add(user);
         sessionRepository.save(session);
 
-        mockMvc.perform(delete("/api/session/" + session.getId() + "/participate/" + user.getId()))
+        mockMvc.perform(delete("/api/session/" + session.getId() + "/participate/" + user.getId())
+                        .header("Authorization", "Bearer " + token)
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
 
         assertEquals(List.of(), Objects.requireNonNull(sessionRepository.findById(session.getId()).orElse(null)).getUsers());
@@ -190,19 +240,21 @@ public class SessionControllerIT {
 
     @Test
     void noLongerParticipate_shouldReturnBadRequestResponse_userIdInvalid() throws Exception {
-        User user = userRepository.save(new User("user@test.com", "User", "Test", "test1234", false));
         session.getUsers().add(user);
         sessionRepository.save(session);
-        mockMvc.perform(delete("/api/session/" + session.getId() + "/participate/168L"))
+        mockMvc.perform(delete("/api/session/" + session.getId() + "/participate/168L")
+                        .header("Authorization", "Bearer " + token)
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isBadRequest());
     }
 
     @Test
     void noLongerParticipate_shouldReturnNotFoundResponse_sessionNotFound() throws Exception {
-        User user = userRepository.save(new User("user@test.com", "User", "Test", "test1234", false));
         session.getUsers().add(user);
         sessionRepository.save(session);
-        mockMvc.perform(delete("/api/session/168/participate/168"))
+        mockMvc.perform(delete("/api/session/168/participate/" + user.getId())
+                        .header("Authorization", "Bearer " + token)
+                        .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound());
     }
 }
