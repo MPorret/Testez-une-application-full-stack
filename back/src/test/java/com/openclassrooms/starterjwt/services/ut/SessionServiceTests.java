@@ -14,6 +14,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -42,8 +43,14 @@ public class SessionServiceTests {
         session.setId(sessionId);
         session.setUsers(new ArrayList<>());
 
-        user = new User();
-        user.setId(userId);
+        user = new User()
+                .setId(userId)
+                .setEmail("user@test.fr")
+                .setFirstName("User")
+                .setLastName("Test")
+                .setAdmin(false)
+                .setCreatedAt(LocalDateTime.now())
+                .setUpdatedAt(LocalDateTime.now());
     }
 
     @Test
@@ -71,18 +78,18 @@ public class SessionServiceTests {
 
     @Test
     public void getById_shouldCallFindById() {
-        when(sessionRepository.findById(userId)).thenReturn(Optional.ofNullable(session));
-        Session result = sessionService.getById(userId);
+        when(sessionRepository.findById(sessionId)).thenReturn(Optional.ofNullable(session));
+        Session result = sessionService.getById(sessionId);
         assertEquals(result, session);
-        verify(sessionRepository).findById(userId);
+        verify(sessionRepository).findById(sessionId);
     }
 
     @Test
     public void getById_shouldThrowError_userNotExists() {
-        when(sessionRepository.findById(userId)).thenReturn(Optional.empty());
-        Session result = sessionService.getById(userId);
+        when(sessionRepository.findById(sessionId)).thenReturn(Optional.empty());
+        Session result = sessionService.getById(sessionId);
         assertNull(result);
-        verify(sessionRepository).findById(userId);
+        verify(sessionRepository).findById(sessionId);
     }
 
     @Test

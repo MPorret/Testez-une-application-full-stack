@@ -10,6 +10,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -29,8 +30,12 @@ public class TeacherServiceTests {
 
     @BeforeEach
     void init() {
-        teacher = new Teacher();
-        teacher.setId(teacherId);
+        teacher = new Teacher(
+                teacherId,
+                "Teacher",
+                "Test",
+                LocalDateTime.now(),
+                LocalDateTime.now());
     }
 
     @Test

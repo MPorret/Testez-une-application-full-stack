@@ -37,7 +37,11 @@ public class SessionServiceIT {
     @BeforeEach
     void init() {
         User user = new User();
-        user.setFirstName("User").setLastName("Test");
+        user.setFirstName("User")
+                .setLastName("Test")
+                .setEmail("user@test.fr")
+                .setAdmin(false)
+                .setPassword("Test1234");
         this.user = userRepository.save(user);
         Session session = new Session();
         session.setName("Session for tests")

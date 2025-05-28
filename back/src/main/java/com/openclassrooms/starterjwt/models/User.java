@@ -15,15 +15,14 @@ import java.time.LocalDateTime;
 @Table(name = "USERS", uniqueConstraints = {
     @UniqueConstraint(columnNames = "email")
 })
-@Data
+@Getter
+@Setter
 @Accessors(chain = true)
 @EntityListeners(AuditingEntityListener.class)
 @EqualsAndHashCode(of = {"id"})
-@Builder
 @NoArgsConstructor
 @RequiredArgsConstructor
 @AllArgsConstructor
-@ToString
 public class User {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
