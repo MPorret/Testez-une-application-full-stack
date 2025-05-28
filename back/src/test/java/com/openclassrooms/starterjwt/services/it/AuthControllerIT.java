@@ -46,11 +46,13 @@ public class AuthControllerIT {
 
     @BeforeEach
     void init(){
-        User user = new User();
-        user.setEmail("newuser@example.com");
-        user.setFirstName("John");
-        user.setLastName("Doe");
-        user.setPassword(passwordEncoder.encode("test123"));
+        User user = new User(
+                "newuser@example.com",
+                "John",
+                "Doe",
+                passwordEncoder.encode("test123"),
+                false);
+
         userRepository.save(user);
     }
 

@@ -10,6 +10,9 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.util.Date;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -22,16 +25,23 @@ public class UserServiceTests {
     private static final Long userId = 2L;
 
     @Mock
-    UserRepository userRepository;
+    private UserRepository userRepository;
     @InjectMocks
-    UserService userService;
+    private UserService userService;
 
     private User user;
 
     @BeforeEach
     void init() {
-        user = new User();
-        user.setId(userId);
+        user = new User(
+                userId,
+                "user@test.fr",
+                "User",
+                "Test",
+                "test1234",
+                false,
+                LocalDateTime.now(),
+                LocalDateTime.now());
     }
 
     @Test

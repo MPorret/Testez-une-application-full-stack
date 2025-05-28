@@ -2,12 +2,14 @@ package com.openclassrooms.starterjwt.services.it;
 
 import com.openclassrooms.starterjwt.dto.UserDto;
 import com.openclassrooms.starterjwt.mapper.UserMapper;
+import com.openclassrooms.starterjwt.mapper.UserMapperImpl;
 import com.openclassrooms.starterjwt.models.User;
 import com.openclassrooms.starterjwt.repository.UserRepository;
 import com.openclassrooms.starterjwt.security.jwt.JwtUtils;
 import com.openclassrooms.starterjwt.services.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Spy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -39,8 +41,8 @@ public class UserControllerIT {
     private PasswordEncoder passwordEncoder;
     @Autowired
     private UserService userService;
-    @Autowired
-    private UserMapper userMapper;
+    @Spy
+    private UserMapper userMapper = new UserMapperImpl();
     @Autowired
     private UserRepository userRepository;
 
