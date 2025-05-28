@@ -29,6 +29,11 @@ describe('Login spec', () => {
     cy.visit('/login')
   })
 
+  it('AuthGard redirect to login', () => {
+    cy.visit('/sessions')
+    cy.url().should('include', '/login')
+  })
+
   it('Login successfull', () => {
     cy.get('input[formControlName=email]').type("yoga@studio.com")
     cy.get('input[formControlName=password]').type(`${"test!1234"}{enter}{enter}`)

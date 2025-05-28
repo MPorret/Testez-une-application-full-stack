@@ -43,14 +43,14 @@ public class SessionServiceTests {
         session.setId(sessionId);
         session.setUsers(new ArrayList<>());
 
-        user = new User()
-                .setId(userId)
-                .setEmail("user@test.fr")
-                .setFirstName("User")
-                .setLastName("Test")
-                .setAdmin(false)
-                .setCreatedAt(LocalDateTime.now())
-                .setUpdatedAt(LocalDateTime.now());
+        user = new User();
+        user.setId(userId);
+        user.setEmail("user@test.fr");
+        user.setFirstName("User");
+        user.setLastName("Test");
+        user.setAdmin(false);
+        user.setCreatedAt(LocalDateTime.now());
+        user.setUpdatedAt(LocalDateTime.now());
     }
 
     @Test

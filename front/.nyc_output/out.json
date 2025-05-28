@@ -385,35 +385,35 @@
       }
     },
     "s": {
-      "0": 17,
-      "1": 17,
-      "2": 17,
-      "3": 933,
-      "4": 7,
-      "5": 7,
-      "6": 7,
-      "7": 3,
-      "8": 3,
-      "9": 3,
-      "10": 10,
-      "11": 17,
-      "12": 17,
-      "13": 17,
-      "14": 17
+      "0": 122,
+      "1": 122,
+      "2": 122,
+      "3": 7512,
+      "4": 80,
+      "5": 80,
+      "6": 80,
+      "7": 13,
+      "8": 13,
+      "9": 13,
+      "10": 93,
+      "11": 122,
+      "12": 122,
+      "13": 122,
+      "14": 122
     },
     "f": {
-      "0": 17,
-      "1": 17,
-      "2": 933,
-      "3": 7,
-      "4": 3,
-      "5": 10,
-      "6": 17
+      "0": 122,
+      "1": 122,
+      "2": 7512,
+      "3": 80,
+      "4": 13,
+      "5": 93,
+      "6": 122
     },
     "b": {
       "0": [
-        17,
-        17
+        122,
+        122
       ]
     },
     "inputSourceMap": {
@@ -702,27 +702,27 @@
       }
     },
     "s": {
-      "0": 17,
-      "1": 3,
-      "2": 3,
-      "3": 3,
-      "4": 1,
-      "5": 17,
-      "6": 3,
-      "7": 17,
-      "8": 17
+      "0": 122,
+      "1": 22,
+      "2": 22,
+      "3": 22,
+      "4": 8,
+      "5": 122,
+      "6": 22,
+      "7": 122,
+      "8": 122
     },
     "f": {
-      "0": 17,
-      "1": 3,
-      "2": 3,
-      "3": 1,
-      "4": 3
+      "0": 122,
+      "1": 22,
+      "2": 22,
+      "3": 8,
+      "4": 22
     },
     "b": {
       "0": [
-        3,
-        3
+        22,
+        22
       ]
     },
     "inputSourceMap": {
@@ -2229,139 +2229,139 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 17,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 3,
-      "10": 3,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 3,
-      "15": 3,
-      "16": 3,
-      "17": 3,
-      "18": 3,
-      "19": 3,
-      "20": 17,
-      "21": 3,
-      "22": 3,
-      "23": 3,
-      "24": 3,
-      "25": 3,
-      "26": 3,
-      "27": 3,
-      "28": 3,
-      "29": 3,
-      "30": 3,
-      "31": 3,
-      "32": 3,
-      "33": 3,
-      "34": 3,
-      "35": 3,
-      "36": 3,
-      "37": 3,
-      "38": 3,
-      "39": 3,
-      "40": 3,
-      "41": 3,
-      "42": 17,
-      "43": 14,
-      "44": 14,
-      "45": 14,
-      "46": 14,
-      "47": 14,
-      "48": 14,
-      "49": 14,
-      "50": 14,
-      "51": 14,
-      "52": 14,
-      "53": 14,
-      "54": 14,
-      "55": 14,
-      "56": 17,
-      "57": 3,
-      "58": 3,
-      "59": 3,
-      "60": 3,
-      "61": 3,
-      "62": 3,
-      "63": 2,
-      "64": 1,
-      "65": 1,
-      "66": 1,
-      "67": 1,
-      "68": 17,
-      "69": 3,
-      "70": 17,
-      "71": 32,
-      "72": 3,
-      "73": 3,
-      "74": 2,
-      "75": 3,
-      "76": 3,
-      "77": 3,
-      "78": 3,
-      "79": 3,
-      "80": 3,
-      "81": 3,
-      "82": 3,
-      "83": 3,
-      "84": 32,
-      "85": 29,
-      "86": 29,
-      "87": 17
+      "0": 18,
+      "1": 6,
+      "2": 6,
+      "3": 6,
+      "4": 96,
+      "5": 16,
+      "6": 16,
+      "7": 16,
+      "8": 16,
+      "9": 16,
+      "10": 16,
+      "11": 8,
+      "12": 8,
+      "13": 8,
+      "14": 16,
+      "15": 16,
+      "16": 16,
+      "17": 16,
+      "18": 16,
+      "19": 16,
+      "20": 114,
+      "21": 22,
+      "22": 22,
+      "23": 22,
+      "24": 22,
+      "25": 22,
+      "26": 22,
+      "27": 22,
+      "28": 22,
+      "29": 22,
+      "30": 22,
+      "31": 22,
+      "32": 22,
+      "33": 22,
+      "34": 22,
+      "35": 22,
+      "36": 22,
+      "37": 22,
+      "38": 22,
+      "39": 22,
+      "40": 22,
+      "41": 22,
+      "42": 114,
+      "43": 92,
+      "44": 92,
+      "45": 92,
+      "46": 92,
+      "47": 92,
+      "48": 92,
+      "49": 92,
+      "50": 92,
+      "51": 92,
+      "52": 92,
+      "53": 92,
+      "54": 92,
+      "55": 92,
+      "56": 122,
+      "57": 22,
+      "58": 22,
+      "59": 22,
+      "60": 22,
+      "61": 22,
+      "62": 22,
+      "63": 8,
+      "64": 8,
+      "65": 8,
+      "66": 8,
+      "67": 8,
+      "68": 122,
+      "69": 22,
+      "70": 122,
+      "71": 224,
+      "72": 22,
+      "73": 22,
+      "74": 8,
+      "75": 22,
+      "76": 22,
+      "77": 22,
+      "78": 22,
+      "79": 22,
+      "80": 22,
+      "81": 22,
+      "82": 22,
+      "83": 22,
+      "84": 224,
+      "85": 202,
+      "86": 202,
+      "87": 122
     },
     "f": {
-      "0": 0,
-      "1": 17,
-      "2": 1,
-      "3": 17,
-      "4": 17,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 2,
-      "9": 1,
-      "10": 1,
-      "11": 3,
-      "12": 32,
-      "13": 2
+      "0": 18,
+      "1": 96,
+      "2": 8,
+      "3": 114,
+      "4": 122,
+      "5": 22,
+      "6": 22,
+      "7": 22,
+      "8": 8,
+      "9": 8,
+      "10": 8,
+      "11": 22,
+      "12": 224,
+      "13": 8
     },
     "b": {
       "0": [
-        0,
-        0
+        6,
+        12
       ],
       "1": [
-        3,
-        14
+        16,
+        80
       ],
       "2": [
-        3,
-        14
+        22,
+        92
       ],
       "3": [
-        14,
-        3
+        92,
+        22
       ],
       "4": [
-        3,
-        3
+        22,
+        22
       ],
       "5": [
-        3,
-        29
+        22,
+        202
       ],
       "6": [
-        29,
-        3
+        202,
+        22
       ]
     },
     "inputSourceMap": {
@@ -2404,12 +2404,12 @@
         "/home/marinep/Documents/OC/Testez-une-application-full-stack/front/src/app/components/me/me.component.ts"
       ],
       "sourcesContent": [
-        "<div class=\"m3\">\n  <mat-card>\n    <mat-card-title>\n      <div fxLayout=\"row\" fxLayoutAlign=\"start center\">\n        <button mat-icon-button (click)=\"back()\" data-testid=\"back-button\">\n          <mat-icon>arrow_back</mat-icon>\n        </button>\n        <h1>User information</h1>\n      </div>\n    </mat-card-title>\n    <mat-card-content data-testid=\"user-card\">\n      <div *ngIf=\"user\" fxLayout=\"column\" fxLayoutAlign=\"start center\" data-testid=\"user-informations\">\n        <p data-testid=\"user-name\">Name: {{ user.firstName }} {{ user.lastName | uppercase }}</p>\n        <p>Email: {{ user.email }}</p>\n        <p *ngIf=\"user.admin\" class=\"my2\" data-testid=\"user-admin\">You are admin</p>\n        <div *ngIf=\"!user.admin\" fxLayout=\"column\" class=\"my2\" fxLayoutAlign=\"center center\" data-testid=\"user-delete\">\n          <p>Delete my account:</p>\n          <button mat-raised-button color=\"warn\" (click)=\"delete()\" data-testid=\"delete-button\">\n            <mat-icon>delete</mat-icon>\n            <span class=\"ml1\">Detail</span>\n          </button>\n        </div>\n        <div fxLayoutAlign=\"space-between center\" class=\"p2 w100\">\n\n          <p><i>Create at: </i> {{ user.createdAt | date: 'longDate'}}</p>\n          <p><i>Last update: </i> {{ user.updatedAt| date: 'longDate'}}</p>\n        </div>\n      </div>\n    </mat-card-content>\n  </mat-card>\n</div>\n",
+        "<div class=\"m3\">\r\n  <mat-card>\r\n    <mat-card-title>\r\n      <div fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n        <button mat-icon-button (click)=\"back()\" data-testid=\"back-button\">\r\n          <mat-icon>arrow_back</mat-icon>\r\n        </button>\r\n        <h1>User information</h1>\r\n      </div>\r\n    </mat-card-title>\r\n    <mat-card-content data-testid=\"user-card\">\r\n      <div *ngIf=\"user\" fxLayout=\"column\" fxLayoutAlign=\"start center\" data-testid=\"user-informations\">\r\n        <p data-testid=\"user-name\">Name: {{ user.firstName }} {{ user.lastName | uppercase }}</p>\r\n        <p>Email: {{ user.email }}</p>\r\n        <p *ngIf=\"user.admin\" class=\"my2\" data-testid=\"user-admin\">You are admin</p>\r\n        <div *ngIf=\"!user.admin\" fxLayout=\"column\" class=\"my2\" fxLayoutAlign=\"center center\" data-testid=\"user-delete\">\r\n          <p>Delete my account:</p>\r\n          <button mat-raised-button color=\"warn\" (click)=\"delete()\" data-testid=\"delete-button\">\r\n            <mat-icon>delete</mat-icon>\r\n            <span class=\"ml1\">Detail</span>\r\n          </button>\r\n        </div>\r\n        <div fxLayoutAlign=\"space-between center\" class=\"p2 w100\">\r\n\r\n          <p><i>Create at: </i> {{ user.createdAt | date: 'longDate'}}</p>\r\n          <p><i>Last update: </i> {{ user.updatedAt| date: 'longDate'}}</p>\r\n        </div>\r\n      </div>\r\n    </mat-card-content>\r\n  </mat-card>\r\n</div>\r\n",
         "import { Component, OnInit } from '@angular/core';\nimport { MatSnackBar } from '@angular/material/snack-bar';\nimport { Router } from '@angular/router';\nimport { User } from '../../interfaces/user.interface';\nimport { SessionService } from '../../services/session.service';\nimport { UserService } from '../../services/user.service';\n\n@Component({\n  selector: 'app-me',\n  templateUrl: './me.component.html',\n  styleUrls: ['./me.component.scss']\n})\nexport class MeComponent implements OnInit {\n\n  public user: User | undefined;\n\n  constructor(private router: Router,\n              private sessionService: SessionService,\n              private matSnackBar: MatSnackBar,\n              private userService: UserService) {\n  }\n\n  public ngOnInit(): void {\n    this.userService\n      .getById(this.sessionService.sessionInformation!.id.toString())\n      .subscribe((user: User) => this.user = user);\n  }\n\n  public back(): void {\n    window.history.back();\n  }\n\n  public delete(): void {\n    this.userService\n      .delete(this.sessionService.sessionInformation!.id.toString())\n      .subscribe((_) => {\n        this.matSnackBar.open(\"Your account has been deleted !\", 'Close', { duration: 3000 });\n        this.sessionService.logOut();\n        this.router.navigate(['/']);\n      })\n  }\n\n}\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "b35d11b5509e9a4819ad675e042b96b3e42e3948"
+    "hash": "84d029d3a8034ea3c27fc10b112a8ade7175856a"
   },
   "/home/marinep/Documents/OC/Testez-une-application-full-stack/front/src/app/components/not-found/not-found.component.ts": {
     "path": "/home/marinep/Documents/OC/Testez-une-application-full-stack/front/src/app/components/not-found/not-found.component.ts",
@@ -2654,29 +2654,29 @@
       }
     },
     "s": {
-      "0": 17,
-      "1": 17,
-      "2": 0,
-      "3": 17,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 17
+      "0": 122,
+      "1": 122,
+      "2": 2,
+      "3": 122,
+      "4": 6,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 122
     },
     "f": {
-      "0": 17,
-      "1": 0,
-      "2": 0
+      "0": 122,
+      "1": 2,
+      "2": 6
     },
     "b": {
       "0": [
-        0,
-        0
+        2,
+        2
       ],
       "1": [
-        0,
-        0
+        2,
+        4
       ]
     },
     "inputSourceMap": {
@@ -2991,32 +2991,32 @@
       }
     },
     "s": {
-      "0": 17,
-      "1": 7,
-      "2": 7,
-      "3": 12,
-      "4": 0,
-      "5": 0,
-      "6": 12,
-      "7": 17,
-      "8": 7,
-      "9": 17,
-      "10": 17
+      "0": 122,
+      "1": 86,
+      "2": 86,
+      "3": 116,
+      "4": 6,
+      "5": 6,
+      "6": 110,
+      "7": 122,
+      "8": 86,
+      "9": 122,
+      "10": 122
     },
     "f": {
-      "0": 17,
-      "1": 7,
-      "2": 12,
-      "3": 7
+      "0": 122,
+      "1": 86,
+      "2": 116,
+      "3": 86
     },
     "b": {
       "0": [
-        0,
-        12
+        6,
+        110
       ],
       "1": [
-        7,
-        7
+        86,
+        86
       ]
     },
     "inputSourceMap": {
@@ -3096,7 +3096,7 @@
         },
         "end": {
           "line": 14,
-          "column": 42
+          "column": 43
         }
       },
       "5": {
@@ -3333,37 +3333,37 @@
       }
     },
     "s": {
-      "0": 17,
-      "1": 17,
-      "2": 17,
-      "3": 20,
+      "0": 122,
+      "1": 120,
+      "2": 120,
+      "3": 133,
       "4": 0,
       "5": 0,
-      "6": 20,
-      "7": 17,
-      "8": 17,
-      "9": 17,
-      "10": 17
+      "6": 133,
+      "7": 122,
+      "8": 120,
+      "9": 122,
+      "10": 122
     },
     "f": {
-      "0": 17,
-      "1": 17,
-      "2": 20,
-      "3": 17
+      "0": 122,
+      "1": 120,
+      "2": 133,
+      "3": 120
     },
     "b": {
       "0": [
         0,
-        20
+        133
       ],
       "1": [
-        17,
-        17
+        120,
+        120
       ]
     },
     "inputSourceMap": {
       "version": 3,
-      "mappings": "AACA,SAAqBA,MAArB,QAAkC,iBAAlC;;;;AAIA,WAAaC,WAAb;EAAM,MAAOA,WAAP,CAAkB;IAEtBC,YACUC,MADV,EAEUC,cAFV,EAEwC;MAD9B;MACA;IAET;;IAEMC,WAAW;MAChB,IAAI,KAAKD,cAAL,CAAoBE,QAAxB,EAAkC;QAChC,KAAKH,MAAL,CAAYI,QAAZ,CAAqB,CAAC,SAAD,CAArB;QACA,OAAO,KAAP;MACD;;MACD,OAAO,IAAP;IACD;;EAdqB;;;qBAAXN,aAAWO;EAAA;;;WAAXP;IAAWQ,SAAXR,WAAW;IAAAS,YADC;;EACzB,OAAaT,WAAb;AAAA",
+      "mappings": "AACA,SAAqBA,MAArB,QAAkC,iBAAlC;;;;AAIA,WAAaC,WAAb;EAAM,MAAOA,WAAP,CAAkB;IAEtBC,YACUC,MADV,EAEUC,cAFV,EAEwC;MAD9B;MACA;IAET;;IAEMC,WAAW;MAChB,IAAI,KAAKD,cAAL,CAAoBE,QAAxB,EAAkC;QAChC,KAAKH,MAAL,CAAYI,QAAZ,CAAqB,CAAC,UAAD,CAArB;QACA,OAAO,KAAP;MACD;;MACD,OAAO,IAAP;IACD;;EAdqB;;;qBAAXN,aAAWO;EAAA;;;WAAXP;IAAWQ,SAAXR,WAAW;IAAAS,YADC;;EACzB,OAAaT,WAAb;AAAA",
       "names": [
         "Router",
         "UnauthGuard",
@@ -3382,11 +3382,11 @@
         "/home/marinep/Documents/OC/Testez-une-application-full-stack/front/src/app/guards/unauth.guard.ts"
       ],
       "sourcesContent": [
-        "import {Injectable} from \"@angular/core\";\nimport {CanActivate, Router} from \"@angular/router\"; \nimport { SessionService } from \"../services/session.service\";\n\n@Injectable({providedIn: 'root'})\nexport class UnauthGuard implements CanActivate {\n\n  constructor( \n    private router: Router,\n    private sessionService: SessionService,\n  ) {\n  }\n\n  public canActivate(): boolean {\n    if (this.sessionService.isLogged) {\n      this.router.navigate(['rentals']);\n      return false;\n    }\n    return true;\n  }\n}"
+        "import {Injectable} from \"@angular/core\";\nimport {CanActivate, Router} from \"@angular/router\"; \nimport { SessionService } from \"../services/session.service\";\n\n@Injectable({providedIn: 'root'})\nexport class UnauthGuard implements CanActivate {\n\n  constructor( \n    private router: Router,\n    private sessionService: SessionService,\n  ) {\n  }\n\n  public canActivate(): boolean {\n    if (this.sessionService.isLogged) {\n      this.router.navigate(['sessions']);\n      return false;\n    }\n    return true;\n  }\n}"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "bc9fe44b499afa7881d4a3e30bfa461812e98c2e"
+    "hash": "01509aa070e78329de96900edfdaa6e8f3a12e90"
   },
   "/home/marinep/Documents/OC/Testez-une-application-full-stack/front/src/app/app-routing.module.ts": {
     "path": "/home/marinep/Documents/OC/Testez-une-application-full-stack/front/src/app/app-routing.module.ts",
@@ -3687,30 +3687,30 @@
       }
     },
     "s": {
-      "0": 17,
-      "1": 17,
-      "2": 17,
-      "3": 7,
-      "4": 7,
-      "5": 17,
-      "6": 17,
-      "7": 17,
-      "8": 17,
-      "9": 17,
-      "10": 17
+      "0": 122,
+      "1": 122,
+      "2": 122,
+      "3": 86,
+      "4": 86,
+      "5": 122,
+      "6": 122,
+      "7": 122,
+      "8": 122,
+      "9": 122,
+      "10": 122
     },
     "f": {
-      "0": 17,
-      "1": 17,
-      "2": 7,
-      "3": 7,
-      "4": 17,
-      "5": 17
+      "0": 122,
+      "1": 122,
+      "2": 86,
+      "3": 86,
+      "4": 122,
+      "5": 122
     },
     "b": {
       "0": [
-        17,
-        17
+        122,
+        122
       ]
     },
     "inputSourceMap": {
@@ -4001,27 +4001,27 @@
       }
     },
     "s": {
-      "0": 17,
-      "1": 17,
-      "2": 17,
-      "3": 8,
-      "4": 9,
-      "5": 17,
-      "6": 17,
-      "7": 17,
-      "8": 17
+      "0": 122,
+      "1": 122,
+      "2": 122,
+      "3": 18,
+      "4": 86,
+      "5": 122,
+      "6": 122,
+      "7": 122,
+      "8": 122
     },
     "f": {
-      "0": 17,
-      "1": 17,
-      "2": 8,
-      "3": 9,
-      "4": 17
+      "0": 122,
+      "1": 122,
+      "2": 18,
+      "3": 86,
+      "4": 122
     },
     "b": {
       "0": [
-        17,
-        17
+        122,
+        122
       ]
     },
     "inputSourceMap": {
@@ -4937,86 +4937,86 @@
       }
     },
     "s": {
-      "0": 102,
-      "1": 7,
-      "2": 7,
-      "3": 7,
-      "4": 7,
-      "5": 7,
-      "6": 7,
-      "7": 7,
-      "8": 7,
-      "9": 7,
-      "10": 2,
-      "11": 2,
-      "12": 2,
-      "13": 7,
-      "14": 7,
-      "15": 858,
-      "16": 20,
-      "17": 20,
-      "18": 20,
-      "19": 20,
-      "20": 20,
-      "21": 20,
-      "22": 17,
-      "23": 17,
-      "24": 17,
-      "25": 17,
-      "26": 933,
-      "27": 2,
-      "28": 2,
-      "29": 17,
-      "30": 17,
-      "31": 17,
-      "32": 950,
-      "33": 17,
-      "34": 17,
-      "35": 17,
-      "36": 17,
-      "37": 17,
-      "38": 17,
-      "39": 17,
-      "40": 17,
-      "41": 17,
-      "42": 17,
-      "43": 950,
-      "44": 933,
-      "45": 933,
-      "46": 933,
-      "47": 17
+      "0": 2489,
+      "1": 80,
+      "2": 80,
+      "3": 80,
+      "4": 80,
+      "5": 80,
+      "6": 80,
+      "7": 80,
+      "8": 80,
+      "9": 80,
+      "10": 5,
+      "11": 5,
+      "12": 5,
+      "13": 80,
+      "14": 80,
+      "15": 5238,
+      "16": 135,
+      "17": 135,
+      "18": 135,
+      "19": 135,
+      "20": 135,
+      "21": 135,
+      "22": 122,
+      "23": 122,
+      "24": 122,
+      "25": 122,
+      "26": 7512,
+      "27": 5,
+      "28": 5,
+      "29": 122,
+      "30": 122,
+      "31": 122,
+      "32": 7634,
+      "33": 122,
+      "34": 122,
+      "35": 122,
+      "36": 122,
+      "37": 122,
+      "38": 122,
+      "39": 122,
+      "40": 122,
+      "41": 122,
+      "42": 122,
+      "43": 7634,
+      "44": 7512,
+      "45": 7512,
+      "46": 7512,
+      "47": 122
     },
     "f": {
-      "0": 102,
-      "1": 2,
-      "2": 858,
-      "3": 17,
-      "4": 17,
-      "5": 933,
-      "6": 2,
-      "7": 17,
-      "8": 950
+      "0": 2489,
+      "1": 5,
+      "2": 5238,
+      "3": 122,
+      "4": 122,
+      "5": 7512,
+      "6": 5,
+      "7": 122,
+      "8": 7634
     },
     "b": {
       "0": [
-        7,
-        95
+        80,
+        2409
       ],
       "1": [
-        20,
-        838
+        135,
+        5103
       ],
       "2": [
-        17,
-        17
+        122,
+        122
       ],
       "3": [
-        17,
-        933
+        122,
+        7512
       ],
       "4": [
-        933,
-        17
+        7512,
+        122
       ]
     },
     "inputSourceMap": {
@@ -5320,30 +5320,30 @@
       }
     },
     "s": {
-      "0": 17,
-      "1": 13,
-      "2": 30,
-      "3": 13,
-      "4": 30,
-      "5": 17,
-      "6": 13,
-      "7": 17,
-      "8": 17
+      "0": 122,
+      "1": 98,
+      "2": 333,
+      "3": 229,
+      "4": 333,
+      "5": 122,
+      "6": 98,
+      "7": 122,
+      "8": 122
     },
     "f": {
-      "0": 17,
-      "1": 13,
-      "2": 30,
-      "3": 13
+      "0": 122,
+      "1": 98,
+      "2": 333,
+      "3": 98
     },
     "b": {
       "0": [
-        13,
-        17
+        229,
+        104
       ],
       "1": [
-        13,
-        13
+        98,
+        98
       ]
     },
     "inputSourceMap": {
@@ -5543,22 +5543,22 @@
       }
     },
     "s": {
-      "0": 17,
-      "1": 17,
-      "2": 17,
-      "3": 17,
-      "4": 17,
-      "5": 17,
-      "6": 17
+      "0": 122,
+      "1": 122,
+      "2": 122,
+      "3": 122,
+      "4": 122,
+      "5": 122,
+      "6": 122
     },
     "f": {
-      "0": 17,
-      "1": 17
+      "0": 122,
+      "1": 122
     },
     "b": {
       "0": [
-        17,
-        17
+        122,
+        122
       ]
     },
     "inputSourceMap": {
@@ -5614,7 +5614,7 @@
     "fnMap": {},
     "branchMap": {},
     "s": {
-      "0": 17
+      "0": 122
     },
     "f": {},
     "b": {},
@@ -5746,9 +5746,9 @@
       }
     },
     "s": {
-      "0": 17,
+      "0": 122,
       "1": 0,
-      "2": 17,
+      "2": 122,
       "3": 0
     },
     "f": {
@@ -5757,7 +5757,7 @@
     "b": {
       "0": [
         0,
-        17
+        122
       ]
     },
     "inputSourceMap": {
@@ -6821,100 +6821,100 @@
       }
     },
     "s": {
-      "0": 6,
-      "1": 2,
-      "2": 2,
-      "3": 2,
-      "4": 17,
-      "5": 13,
-      "6": 13,
-      "7": 13,
-      "8": 13,
-      "9": 13,
-      "10": 13,
-      "11": 13,
-      "12": 9,
-      "13": 9,
-      "14": 7,
-      "15": 7,
-      "16": 2,
-      "17": 17,
-      "18": 13,
-      "19": 17,
-      "20": 465,
-      "21": 13,
-      "22": 13,
-      "23": 13,
-      "24": 13,
-      "25": 13,
-      "26": 9,
-      "27": 13,
-      "28": 13,
-      "29": 13,
-      "30": 13,
-      "31": 13,
-      "32": 13,
-      "33": 13,
-      "34": 18,
-      "35": 13,
-      "36": 13,
-      "37": 13,
-      "38": 13,
-      "39": 13,
-      "40": 13,
-      "41": 13,
-      "42": 13,
-      "43": 465,
-      "44": 452,
-      "45": 452,
-      "46": 452,
-      "47": 452,
-      "48": 452,
-      "49": 452,
-      "50": 452,
-      "51": 452,
-      "52": 452,
-      "53": 452,
-      "54": 452,
-      "55": 452,
-      "56": 17
+      "0": 18,
+      "1": 6,
+      "2": 6,
+      "3": 6,
+      "4": 122,
+      "5": 107,
+      "6": 107,
+      "7": 107,
+      "8": 107,
+      "9": 107,
+      "10": 107,
+      "11": 107,
+      "12": 86,
+      "13": 86,
+      "14": 80,
+      "15": 80,
+      "16": 6,
+      "17": 122,
+      "18": 107,
+      "19": 122,
+      "20": 3923,
+      "21": 107,
+      "22": 107,
+      "23": 107,
+      "24": 107,
+      "25": 107,
+      "26": 86,
+      "27": 107,
+      "28": 107,
+      "29": 107,
+      "30": 107,
+      "31": 107,
+      "32": 107,
+      "33": 107,
+      "34": 172,
+      "35": 107,
+      "36": 107,
+      "37": 107,
+      "38": 107,
+      "39": 107,
+      "40": 107,
+      "41": 107,
+      "42": 107,
+      "43": 3923,
+      "44": 3816,
+      "45": 3816,
+      "46": 3816,
+      "47": 3816,
+      "48": 3816,
+      "49": 3816,
+      "50": 3816,
+      "51": 3816,
+      "52": 3816,
+      "53": 3816,
+      "54": 3816,
+      "55": 3816,
+      "56": 122
     },
     "f": {
-      "0": 6,
-      "1": 17,
-      "2": 13,
-      "3": 9,
-      "4": 7,
-      "5": 2,
-      "6": 13,
-      "7": 465,
-      "8": 9,
-      "9": 18
+      "0": 18,
+      "1": 122,
+      "2": 107,
+      "3": 86,
+      "4": 80,
+      "5": 6,
+      "6": 107,
+      "7": 3923,
+      "8": 86,
+      "9": 172
     },
     "b": {
       "0": [
-        2,
-        4
+        6,
+        12
       ],
       "1": [
-        13,
-        13
+        107,
+        107
       ],
       "2": [
-        13,
-        452
+        107,
+        3816
       ],
       "3": [
-        452,
-        13
+        3816,
+        107
       ],
       "4": [
-        434,
-        18
+        3644,
+        172
       ],
       "5": [
-        434,
-        18
+        3644,
+        172
       ]
     },
     "inputSourceMap": {
@@ -7825,83 +7825,83 @@
       }
     },
     "s": {
-      "0": 18,
-      "1": 2,
-      "2": 2,
-      "3": 2,
-      "4": 17,
-      "5": 6,
-      "6": 6,
-      "7": 6,
-      "8": 6,
-      "9": 6,
-      "10": 8,
-      "11": 8,
-      "12": 4,
-      "13": 4,
-      "14": 17,
-      "15": 6,
-      "16": 17,
-      "17": 334,
-      "18": 6,
-      "19": 6,
-      "20": 6,
-      "21": 6,
-      "22": 6,
-      "23": 8,
-      "24": 6,
-      "25": 6,
-      "26": 6,
-      "27": 6,
-      "28": 6,
-      "29": 6,
-      "30": 6,
-      "31": 6,
-      "32": 6,
-      "33": 6,
-      "34": 6,
-      "35": 6,
-      "36": 6,
-      "37": 6,
-      "38": 6,
-      "39": 6,
-      "40": 6,
-      "41": 334,
-      "42": 328,
-      "43": 328,
-      "44": 328,
-      "45": 328,
-      "46": 328,
-      "47": 328,
-      "48": 17
+      "0": 54,
+      "1": 6,
+      "2": 6,
+      "3": 6,
+      "4": 122,
+      "5": 17,
+      "6": 17,
+      "7": 17,
+      "8": 17,
+      "9": 17,
+      "10": 18,
+      "11": 18,
+      "12": 6,
+      "13": 12,
+      "14": 122,
+      "15": 17,
+      "16": 122,
+      "17": 935,
+      "18": 17,
+      "19": 17,
+      "20": 17,
+      "21": 17,
+      "22": 17,
+      "23": 18,
+      "24": 17,
+      "25": 17,
+      "26": 17,
+      "27": 17,
+      "28": 17,
+      "29": 17,
+      "30": 17,
+      "31": 17,
+      "32": 17,
+      "33": 17,
+      "34": 17,
+      "35": 17,
+      "36": 17,
+      "37": 17,
+      "38": 17,
+      "39": 17,
+      "40": 17,
+      "41": 935,
+      "42": 918,
+      "43": 918,
+      "44": 918,
+      "45": 918,
+      "46": 918,
+      "47": 918,
+      "48": 122
     },
     "f": {
-      "0": 18,
-      "1": 17,
-      "2": 6,
-      "3": 8,
-      "4": 4,
-      "5": 4,
-      "6": 6,
-      "7": 334,
-      "8": 8
+      "0": 54,
+      "1": 122,
+      "2": 17,
+      "3": 18,
+      "4": 6,
+      "5": 12,
+      "6": 17,
+      "7": 935,
+      "8": 18
     },
     "b": {
       "0": [
-        2,
-        16
+        6,
+        48
       ],
       "1": [
-        6,
-        6
+        17,
+        17
       ],
       "2": [
-        6,
-        328
+        17,
+        918
       ],
       "3": [
-        328,
-        6
+        918,
+        17
       ]
     },
     "inputSourceMap": {
@@ -8117,22 +8117,22 @@
       }
     },
     "s": {
-      "0": 17,
-      "1": 17,
-      "2": 17,
-      "3": 17,
-      "4": 17,
-      "5": 17,
-      "6": 17
+      "0": 122,
+      "1": 122,
+      "2": 122,
+      "3": 122,
+      "4": 122,
+      "5": 122,
+      "6": 122
     },
     "f": {
-      "0": 17,
-      "1": 17
+      "0": 122,
+      "1": 122
     },
     "b": {
       "0": [
-        17,
-        17
+        122,
+        122
       ]
     },
     "inputSourceMap": {
@@ -8323,22 +8323,22 @@
       }
     },
     "s": {
-      "0": 17,
-      "1": 17,
-      "2": 17,
-      "3": 17,
-      "4": 17,
-      "5": 17,
-      "6": 17
+      "0": 122,
+      "1": 122,
+      "2": 122,
+      "3": 122,
+      "4": 122,
+      "5": 122,
+      "6": 122
     },
     "f": {
-      "0": 17,
-      "1": 17
+      "0": 122,
+      "1": 122
     },
     "b": {
       "0": [
-        17,
-        17
+        122,
+        122
       ]
     },
     "inputSourceMap": {
@@ -8794,37 +8794,37 @@
       }
     },
     "s": {
-      "0": 7,
-      "1": 7,
-      "2": 7,
-      "3": 9,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 7,
-      "11": 7,
-      "12": 7,
-      "13": 7
+      "0": 86,
+      "1": 80,
+      "2": 80,
+      "3": 105,
+      "4": 33,
+      "5": 4,
+      "6": 5,
+      "7": 4,
+      "8": 3,
+      "9": 3,
+      "10": 86,
+      "11": 80,
+      "12": 86,
+      "13": 86
     },
     "f": {
-      "0": 7,
-      "1": 7,
-      "2": 9,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 7
+      "0": 86,
+      "1": 80,
+      "2": 105,
+      "3": 33,
+      "4": 4,
+      "5": 5,
+      "6": 4,
+      "7": 3,
+      "8": 3,
+      "9": 80
     },
     "b": {
       "0": [
-        7,
-        7
+        80,
+        80
       ]
     },
     "inputSourceMap": {
@@ -9118,27 +9118,27 @@
       }
     },
     "s": {
-      "0": 7,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 7,
-      "6": 0,
-      "7": 7,
-      "8": 7
+      "0": 86,
+      "1": 36,
+      "2": 36,
+      "3": 17,
+      "4": 25,
+      "5": 86,
+      "6": 36,
+      "7": 86,
+      "8": 86
     },
     "f": {
-      "0": 7,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0
+      "0": 86,
+      "1": 36,
+      "2": 17,
+      "3": 25,
+      "4": 36
     },
     "b": {
       "0": [
-        0,
-        0
+        36,
+        36
       ]
     },
     "inputSourceMap": {
@@ -11973,257 +11973,257 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0,
-      "41": 0,
-      "42": 0,
-      "43": 0,
-      "44": 0,
-      "45": 0,
-      "46": 0,
-      "47": 0,
-      "48": 0,
-      "49": 0,
-      "50": 0,
-      "51": 0,
-      "52": 0,
-      "53": 0,
-      "54": 0,
-      "55": 0,
-      "56": 0,
-      "57": 0,
-      "58": 0,
-      "59": 0,
-      "60": 0,
-      "61": 0,
-      "62": 0,
-      "63": 0,
-      "64": 0,
-      "65": 0,
-      "66": 0,
-      "67": 0,
-      "68": 0,
-      "69": 0,
-      "70": 0,
-      "71": 0,
-      "72": 0,
-      "73": 0,
-      "74": 0,
-      "75": 0,
-      "76": 0,
-      "77": 0,
-      "78": 0,
-      "79": 0,
-      "80": 0,
-      "81": 0,
-      "82": 0,
-      "83": 0,
-      "84": 0,
-      "85": 0,
-      "86": 0,
-      "87": 0,
-      "88": 0,
-      "89": 0,
-      "90": 0,
-      "91": 0,
-      "92": 0,
-      "93": 0,
-      "94": 0,
-      "95": 0,
-      "96": 0,
-      "97": 0,
-      "98": 0,
-      "99": 0,
-      "100": 0,
-      "101": 0,
-      "102": 0,
-      "103": 0,
-      "104": 0,
-      "105": 0,
-      "106": 0,
-      "107": 0,
-      "108": 0,
-      "109": 0,
-      "110": 0,
-      "111": 0,
-      "112": 0,
-      "113": 0,
-      "114": 0,
-      "115": 0,
-      "116": 0,
-      "117": 0,
-      "118": 0,
-      "119": 0,
-      "120": 0,
-      "121": 0,
-      "122": 0,
-      "123": 0,
-      "124": 0,
-      "125": 0,
-      "126": 0,
-      "127": 0,
-      "128": 0,
-      "129": 0,
-      "130": 0,
-      "131": 0,
-      "132": 0,
-      "133": 0,
-      "134": 0,
-      "135": 7,
-      "136": 0,
-      "137": 0,
-      "138": 0,
-      "139": 0,
-      "140": 0,
-      "141": 0,
-      "142": 0,
-      "143": 0,
-      "144": 0,
-      "145": 0,
-      "146": 0,
-      "147": 0,
-      "148": 0,
-      "149": 0,
-      "150": 0,
-      "151": 0,
-      "152": 0,
-      "153": 0,
-      "154": 0,
-      "155": 0,
-      "156": 0,
-      "157": 0,
-      "158": 0,
-      "159": 0,
-      "160": 0,
-      "161": 0,
-      "162": 0,
-      "163": 7,
-      "164": 0,
-      "165": 7,
-      "166": 0,
-      "167": 0,
-      "168": 0,
-      "169": 0,
-      "170": 0,
-      "171": 0,
-      "172": 0,
-      "173": 7
+      "0": 46,
+      "1": 8,
+      "2": 8,
+      "3": 8,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 8,
+      "8": 8,
+      "9": 8,
+      "10": 8,
+      "11": 8,
+      "12": 8,
+      "13": 140,
+      "14": 14,
+      "15": 14,
+      "16": 14,
+      "17": 3,
+      "18": 3,
+      "19": 3,
+      "20": 14,
+      "21": 14,
+      "22": 14,
+      "23": 14,
+      "24": 14,
+      "25": 14,
+      "26": 57,
+      "27": 3,
+      "28": 3,
+      "29": 3,
+      "30": 3,
+      "31": 3,
+      "32": 3,
+      "33": 3,
+      "34": 3,
+      "35": 3,
+      "36": 3,
+      "37": 3,
+      "38": 3,
+      "39": 191,
+      "40": 11,
+      "41": 11,
+      "42": 11,
+      "43": 11,
+      "44": 191,
+      "45": 180,
+      "46": 180,
+      "47": 180,
+      "48": 180,
+      "49": 180,
+      "50": 121,
+      "51": 10,
+      "52": 10,
+      "53": 10,
+      "54": 10,
+      "55": 10,
+      "56": 10,
+      "57": 10,
+      "58": 121,
+      "59": 111,
+      "60": 111,
+      "61": 111,
+      "62": 237,
+      "63": 19,
+      "64": 19,
+      "65": 19,
+      "66": 4,
+      "67": 4,
+      "68": 4,
+      "69": 19,
+      "70": 19,
+      "71": 19,
+      "72": 19,
+      "73": 19,
+      "74": 19,
+      "75": 19,
+      "76": 19,
+      "77": 19,
+      "78": 19,
+      "79": 19,
+      "80": 19,
+      "81": 19,
+      "82": 19,
+      "83": 19,
+      "84": 19,
+      "85": 19,
+      "86": 19,
+      "87": 19,
+      "88": 19,
+      "89": 19,
+      "90": 19,
+      "91": 19,
+      "92": 19,
+      "93": 19,
+      "94": 19,
+      "95": 19,
+      "96": 19,
+      "97": 19,
+      "98": 19,
+      "99": 19,
+      "100": 19,
+      "101": 19,
+      "102": 19,
+      "103": 19,
+      "104": 19,
+      "105": 19,
+      "106": 19,
+      "107": 19,
+      "108": 19,
+      "109": 19,
+      "110": 19,
+      "111": 19,
+      "112": 19,
+      "113": 19,
+      "114": 19,
+      "115": 237,
+      "116": 218,
+      "117": 218,
+      "118": 218,
+      "119": 218,
+      "120": 218,
+      "121": 218,
+      "122": 218,
+      "123": 218,
+      "124": 218,
+      "125": 218,
+      "126": 218,
+      "127": 218,
+      "128": 218,
+      "129": 218,
+      "130": 218,
+      "131": 218,
+      "132": 218,
+      "133": 218,
+      "134": 218,
+      "135": 86,
+      "136": 19,
+      "137": 19,
+      "138": 19,
+      "139": 19,
+      "140": 19,
+      "141": 19,
+      "142": 19,
+      "143": 19,
+      "144": 19,
+      "145": 19,
+      "146": 19,
+      "147": 19,
+      "148": 19,
+      "149": 4,
+      "150": 4,
+      "151": 4,
+      "152": 4,
+      "153": 3,
+      "154": 3,
+      "155": 3,
+      "156": 3,
+      "157": 25,
+      "158": 25,
+      "159": 25,
+      "160": 69,
+      "161": 25,
+      "162": 18,
+      "163": 86,
+      "164": 19,
+      "165": 86,
+      "166": 332,
+      "167": 19,
+      "168": 19,
+      "169": 19,
+      "170": 332,
+      "171": 313,
+      "172": 313,
+      "173": 86
     },
     "f": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 7,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0
+      "0": 46,
+      "1": 4,
+      "2": 140,
+      "3": 3,
+      "4": 57,
+      "5": 3,
+      "6": 191,
+      "7": 121,
+      "8": 237,
+      "9": 4,
+      "10": 86,
+      "11": 19,
+      "12": 19,
+      "13": 4,
+      "14": 4,
+      "15": 4,
+      "16": 3,
+      "17": 3,
+      "18": 3,
+      "19": 3,
+      "20": 25,
+      "21": 25,
+      "22": 69,
+      "23": 18,
+      "24": 19,
+      "25": 332
     },
     "b": {
       "0": [
-        0,
-        0
+        8,
+        38
       ],
       "1": [
-        0,
-        0
+        14,
+        126
       ],
       "2": [
-        0,
-        0
+        3,
+        54
       ],
       "3": [
-        0,
-        0
+        11,
+        180
       ],
       "4": [
-        0,
-        0
+        180,
+        11
       ],
       "5": [
-        0,
-        0
+        10,
+        111
       ],
       "6": [
-        0,
-        0
+        111,
+        10
       ],
       "7": [
-        0,
-        0
+        19,
+        218
       ],
       "8": [
-        0,
-        0
+        218,
+        19
       ],
       "9": [
-        0,
-        0
+        19,
+        19
       ],
       "10": [
-        0,
-        0
+        19,
+        313
       ],
       "11": [
-        0,
-        0
+        313,
+        19
       ]
     },
     "inputSourceMap": {
@@ -12283,12 +12283,12 @@
         "/home/marinep/Documents/OC/Testez-une-application-full-stack/front/src/app/features/sessions/components/detail/detail.component.ts"
       ],
       "sourcesContent": [
-        "<div class=\"m3\">\n  <mat-card *ngIf=\"session\">\n    <mat-card-title>\n      <div fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\n        <div fxLayout=\"row\" fxLayoutAlign=\"start center\">\n          <button mat-icon-button (click)=\"back()\" data-testid=\"back-button\">\n            <mat-icon>arrow_back</mat-icon>\n          </button>\n          <h1>{{session.name | titlecase}}</h1>\n        </div>\n        <div>\n          <button *ngIf=\"isAdmin\" mat-raised-button color=\"warn\" (click)=\"delete()\" data-testid=\"delete-button\">\n            <mat-icon>delete</mat-icon>\n            <span class=\"ml1\">Delete</span>\n          </button>\n          <div *ngIf=\"!isAdmin\">\n            <button *ngIf=\"!isParticipate\" mat-raised-button color=\"primary\" (click)=\"participate()\" data-testid=\"participate-button\">\n              <mat-icon>person_add</mat-icon>\n              <span class=\"ml1\">Participate</span>\n            </button>\n            <button *ngIf=\"isParticipate\" mat-raised-button color=\"warn\" (click)=\"unParticipate()\" data-testid=\"unparticipate-button\">\n              <mat-icon>person_remove</mat-icon>\n              <span class=\"ml1\">Do not participate</span>\n            </button>\n\n          </div>\n\n\n        </div>\n      </div>\n    </mat-card-title>\n    <mat-card-subtitle *ngIf=\"teacher\">\n      <div fxLayoutAlign=\"start center\" class=\"ml3\">\n        <mat-icon>\n          people\n        </mat-icon>\n        <span class=\"ml1\" data-testid=\"teacher-name\">{{ teacher.firstName }} {{ teacher.lastName | uppercase }}</span>\n      </div>\n    </mat-card-subtitle>\n    <div mat-card-image fxLayoutAlign=\"center center\">\n      <img class=\"picture\" src=\"assets/sessions.png\" alt=\"Yoga session\">\n    </div>\n    <mat-card-content>\n      <div class=\"my2\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\n        <div fxLayoutAlign=\"start center\">\n          <mat-icon>\n            group\n          </mat-icon>\n          <span class=\"ml1\" data-testid=\"number-attendees\">{{ session.users.length }} attendees</span>\n        </div>\n        <div fxLayoutAlign=\"start center\">\n          <mat-icon>\n            calendar_month\n          </mat-icon>\n          <span class=\"ml1\" data-testid=\"session-date\">{{ session.date | date: 'longDate'}}</span>\n        </div>\n      </div>\n      <div class=\"description\">\n        <p>Description:</p>\n        {{ session.description }}\n        <br>\n      </div>\n      <div class=\"date\" class=\"my2\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\n        <div class=\"created\"><i>Create at: </i> {{ session.createdAt| date: 'longDate'}}</div>\n        <div class=\"updated\"><i>Last update: </i> {{ session.updatedAt| date: 'longDate'}}</div>\n      </div>\n    </mat-card-content>\n  </mat-card>\n</div>\n",
+        "<div class=\"m3\">\r\n  <mat-card *ngIf=\"session\">\r\n    <mat-card-title>\r\n      <div fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\r\n        <div fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n          <button mat-icon-button (click)=\"back()\" data-testid=\"back-button\">\r\n            <mat-icon>arrow_back</mat-icon>\r\n          </button>\r\n          <h1>{{session.name | titlecase}}</h1>\r\n        </div>\r\n        <div>\r\n          <button *ngIf=\"isAdmin\" mat-raised-button color=\"warn\" (click)=\"delete()\" data-testid=\"delete-button\">\r\n            <mat-icon>delete</mat-icon>\r\n            <span class=\"ml1\">Delete</span>\r\n          </button>\r\n          <div *ngIf=\"!isAdmin\">\r\n            <button *ngIf=\"!isParticipate\" mat-raised-button color=\"primary\" (click)=\"participate()\" data-testid=\"participate-button\">\r\n              <mat-icon>person_add</mat-icon>\r\n              <span class=\"ml1\">Participate</span>\r\n            </button>\r\n            <button *ngIf=\"isParticipate\" mat-raised-button color=\"warn\" (click)=\"unParticipate()\" data-testid=\"unparticipate-button\">\r\n              <mat-icon>person_remove</mat-icon>\r\n              <span class=\"ml1\">Do not participate</span>\r\n            </button>\r\n\r\n          </div>\r\n\r\n\r\n        </div>\r\n      </div>\r\n    </mat-card-title>\r\n    <mat-card-subtitle *ngIf=\"teacher\">\r\n      <div fxLayoutAlign=\"start center\" class=\"ml3\">\r\n        <mat-icon>\r\n          people\r\n        </mat-icon>\r\n        <span class=\"ml1\" data-testid=\"teacher-name\">{{ teacher.firstName }} {{ teacher.lastName | uppercase }}</span>\r\n      </div>\r\n    </mat-card-subtitle>\r\n    <div mat-card-image fxLayoutAlign=\"center center\">\r\n      <img class=\"picture\" src=\"assets/sessions.png\" alt=\"Yoga session\">\r\n    </div>\r\n    <mat-card-content>\r\n      <div class=\"my2\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\r\n        <div fxLayoutAlign=\"start center\">\r\n          <mat-icon>\r\n            group\r\n          </mat-icon>\r\n          <span class=\"ml1\" data-testid=\"number-attendees\">{{ session.users.length }} attendees</span>\r\n        </div>\r\n        <div fxLayoutAlign=\"start center\">\r\n          <mat-icon>\r\n            calendar_month\r\n          </mat-icon>\r\n          <span class=\"ml1\" data-testid=\"session-date\">{{ session.date | date: 'longDate'}}</span>\r\n        </div>\r\n      </div>\r\n      <div class=\"description\">\r\n        <p>Description:</p>\r\n        {{ session.description }}\r\n        <br>\r\n      </div>\r\n      <div class=\"date\" class=\"my2\" fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\r\n        <div class=\"created\"><i>Create at: </i> {{ session.createdAt| date: 'longDate'}}</div>\r\n        <div class=\"updated\"><i>Last update: </i> {{ session.updatedAt| date: 'longDate'}}</div>\r\n      </div>\r\n    </mat-card-content>\r\n  </mat-card>\r\n</div>\r\n",
         "import { Component, OnInit } from '@angular/core';\nimport { FormBuilder } from '@angular/forms';\nimport { MatSnackBar } from '@angular/material/snack-bar';\nimport { ActivatedRoute, Router } from '@angular/router';\nimport { Teacher } from '../../../../interfaces/teacher.interface';\nimport { SessionService } from '../../../../services/session.service';\nimport { TeacherService } from '../../../../services/teacher.service';\nimport { Session } from '../../interfaces/session.interface';\nimport { SessionApiService } from '../../services/session-api.service';\n\n@Component({\n  selector: 'app-detail',\n  templateUrl: './detail.component.html',\n  styleUrls: ['./detail.component.scss']\n})\nexport class DetailComponent implements OnInit {\n  public session: Session | undefined;\n  public teacher: Teacher | undefined;\n\n  public isParticipate = false;\n  public isAdmin = false;\n\n  public sessionId: string;\n  public userId: string;\n\n  constructor(\n    private route: ActivatedRoute,\n    private fb: FormBuilder,\n    private sessionService: SessionService,\n    private sessionApiService: SessionApiService,\n    private teacherService: TeacherService,\n    private matSnackBar: MatSnackBar,\n    private router: Router) {\n    this.sessionId = this.route.snapshot.paramMap.get('id')!;\n    this.isAdmin = this.sessionService.sessionInformation!.admin;\n    this.userId = this.sessionService.sessionInformation!.id.toString();\n  }\n\n  public ngOnInit(): void {\n    this.fetchSession();\n  }\n\n  public back() {\n    window.history.back();\n  }\n\n  public delete(): void {\n    this.sessionApiService\n      .delete(this.sessionId)\n      .subscribe((_: any) => {\n          this.matSnackBar.open('Session deleted !', 'Close', { duration: 3000 });\n          this.router.navigate(['sessions']);\n        }\n      );\n  }\n\n  public participate(): void {\n    this.sessionApiService.participate(this.sessionId, this.userId).subscribe(_ => this.fetchSession());\n  }\n\n  public unParticipate(): void {\n    this.sessionApiService.unParticipate(this.sessionId, this.userId).subscribe(_ => this.fetchSession());\n  }\n\n  private fetchSession(): void {\n    this.sessionApiService\n      .detail(this.sessionId)\n      .subscribe((session: Session) => {\n        this.session = session;\n        this.isParticipate = session.users.some(u => u === this.sessionService.sessionInformation!.id);\n        this.teacherService\n          .detail(session.teacher_id.toString())\n          .subscribe((teacher: Teacher) => this.teacher = teacher);\n      });\n  }\n\n}\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "a3b3c5496038133c1bb7e95bb0cfeb3707b634fe"
+    "hash": "477ebde2760968d8063bc38bc57b185345b89abe"
   },
   "/home/marinep/Documents/OC/Testez-une-application-full-stack/front/src/app/features/sessions/components/form/form.component.ts": {
     "path": "/home/marinep/Documents/OC/Testez-une-application-full-stack/front/src/app/features/sessions/components/form/form.component.ts",
@@ -14309,194 +14309,194 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0,
-      "41": 0,
-      "42": 0,
-      "43": 0,
-      "44": 0,
-      "45": 0,
-      "46": 0,
-      "47": 0,
-      "48": 0,
-      "49": 0,
-      "50": 0,
-      "51": 0,
-      "52": 0,
-      "53": 0,
-      "54": 0,
-      "55": 0,
-      "56": 0,
-      "57": 7,
-      "58": 0,
-      "59": 0,
-      "60": 0,
-      "61": 0,
-      "62": 0,
-      "63": 0,
-      "64": 0,
-      "65": 0,
-      "66": 0,
-      "67": 0,
+      "0": 705,
+      "1": 9,
+      "2": 9,
+      "3": 9,
+      "4": 260,
+      "5": 8,
+      "6": 8,
+      "7": 8,
+      "8": 799,
+      "9": 17,
+      "10": 17,
+      "11": 17,
+      "12": 799,
+      "13": 782,
+      "14": 782,
+      "15": 782,
+      "16": 782,
+      "17": 925,
+      "18": 17,
+      "19": 17,
+      "20": 17,
+      "21": 9,
+      "22": 9,
+      "23": 9,
+      "24": 17,
+      "25": 17,
+      "26": 17,
+      "27": 17,
+      "28": 17,
+      "29": 17,
+      "30": 17,
+      "31": 17,
+      "32": 17,
+      "33": 17,
+      "34": 17,
+      "35": 17,
+      "36": 17,
+      "37": 17,
+      "38": 17,
+      "39": 17,
+      "40": 17,
+      "41": 17,
+      "42": 17,
+      "43": 17,
+      "44": 17,
+      "45": 17,
+      "46": 17,
+      "47": 17,
+      "48": 17,
+      "49": 925,
+      "50": 908,
+      "51": 908,
+      "52": 908,
+      "53": 908,
+      "54": 908,
+      "55": 908,
+      "56": 908,
+      "57": 86,
+      "58": 17,
+      "59": 17,
+      "60": 17,
+      "61": 17,
+      "62": 17,
+      "63": 17,
+      "64": 17,
+      "65": 17,
+      "66": 17,
+      "67": 17,
       "68": 0,
-      "69": 0,
-      "70": 0,
-      "71": 0,
-      "72": 0,
-      "73": 0,
-      "74": 0,
-      "75": 0,
-      "76": 0,
-      "77": 0,
-      "78": 0,
-      "79": 0,
-      "80": 0,
-      "81": 0,
-      "82": 0,
-      "83": 0,
-      "84": 0,
-      "85": 7,
-      "86": 0,
-      "87": 7,
-      "88": 0,
-      "89": 0,
-      "90": 0,
-      "91": 0,
-      "92": 0,
-      "93": 0,
-      "94": 0,
-      "95": 0,
-      "96": 0,
-      "97": 0,
-      "98": 0,
-      "99": 0,
-      "100": 0,
-      "101": 0,
-      "102": 0,
-      "103": 0,
-      "104": 7
+      "69": 17,
+      "70": 17,
+      "71": 8,
+      "72": 8,
+      "73": 8,
+      "74": 8,
+      "75": 9,
+      "76": 9,
+      "77": 9,
+      "78": 5,
+      "79": 5,
+      "80": 4,
+      "81": 4,
+      "82": 17,
+      "83": 9,
+      "84": 9,
+      "85": 86,
+      "86": 17,
+      "87": 86,
+      "88": 965,
+      "89": 17,
+      "90": 17,
+      "91": 17,
+      "92": 17,
+      "93": 17,
+      "94": 17,
+      "95": 17,
+      "96": 17,
+      "97": 965,
+      "98": 948,
+      "99": 948,
+      "100": 948,
+      "101": 948,
+      "102": 948,
+      "103": 948,
+      "104": 86
     },
     "f": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 7,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0
+      "0": 705,
+      "1": 260,
+      "2": 799,
+      "3": 925,
+      "4": 9,
+      "5": 86,
+      "6": 17,
+      "7": 17,
+      "8": 8,
+      "9": 9,
+      "10": 5,
+      "11": 4,
+      "12": 17,
+      "13": 9,
+      "14": 17,
+      "15": 965
     },
     "b": {
       "0": [
-        0,
-        0
+        9,
+        696
       ],
       "1": [
-        0,
-        0
+        8,
+        252
       ],
       "2": [
-        0,
-        0
+        17,
+        782
       ],
       "3": [
-        0,
-        0
+        782,
+        17
       ],
       "4": [
-        0,
-        0
+        17,
+        908
       ],
       "5": [
-        0,
-        0
+        908,
+        17
       ],
       "6": [
         0,
-        0
+        17
       ],
       "7": [
-        0,
-        0
+        8,
+        9
       ],
       "8": [
-        0,
-        0
+        5,
+        4
       ],
       "9": [
-        0,
-        0
+        8,
+        9
       ],
       "10": [
-        0,
-        0
+        8,
+        9
       ],
       "11": [
-        0,
-        0
+        8,
+        9
       ],
       "12": [
-        0,
-        0
+        8,
+        9
       ],
       "13": [
-        0,
-        0
+        17,
+        17
       ],
       "14": [
-        0,
-        0
+        17,
+        948
       ],
       "15": [
-        0,
-        0
+        948,
+        17
       ]
     },
     "inputSourceMap": {
@@ -15906,131 +15906,131 @@
       }
     },
     "s": {
-      "0": 18,
-      "1": 4,
-      "2": 4,
-      "3": 4,
-      "4": 4,
-      "5": 4,
-      "6": 4,
-      "7": 7,
-      "8": 1,
-      "9": 3,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 1,
-      "16": 3,
-      "17": 2,
-      "18": 2,
-      "19": 7,
-      "20": 6,
-      "21": 18,
-      "22": 6,
-      "23": 6,
-      "24": 6,
-      "25": 6,
-      "26": 6,
-      "27": 6,
-      "28": 6,
-      "29": 6,
-      "30": 6,
-      "31": 6,
-      "32": 6,
-      "33": 6,
-      "34": 6,
-      "35": 6,
-      "36": 6,
-      "37": 6,
-      "38": 6,
-      "39": 6,
-      "40": 6,
-      "41": 6,
-      "42": 6,
-      "43": 18,
-      "44": 12,
-      "45": 12,
-      "46": 12,
-      "47": 12,
-      "48": 12,
-      "49": 12,
-      "50": 12,
-      "51": 12,
-      "52": 12,
-      "53": 12,
-      "54": 12,
-      "55": 12,
-      "56": 7,
-      "57": 9,
-      "58": 9,
-      "59": 9,
-      "60": 64,
-      "61": 7,
-      "62": 9,
-      "63": 7,
-      "64": 61,
-      "65": 9,
-      "66": 9,
-      "67": 9,
-      "68": 9,
-      "69": 9,
-      "70": 9,
-      "71": 9,
-      "72": 9,
-      "73": 9,
-      "74": 61,
-      "75": 52,
-      "76": 52,
-      "77": 52,
-      "78": 52,
-      "79": 7
+      "0": 492,
+      "1": 56,
+      "2": 56,
+      "3": 56,
+      "4": 56,
+      "5": 56,
+      "6": 56,
+      "7": 86,
+      "8": 50,
+      "9": 150,
+      "10": 50,
+      "11": 50,
+      "12": 50,
+      "13": 50,
+      "14": 50,
+      "15": 50,
+      "16": 150,
+      "17": 100,
+      "18": 100,
+      "19": 86,
+      "20": 94,
+      "21": 282,
+      "22": 94,
+      "23": 94,
+      "24": 94,
+      "25": 94,
+      "26": 94,
+      "27": 94,
+      "28": 94,
+      "29": 94,
+      "30": 94,
+      "31": 94,
+      "32": 94,
+      "33": 94,
+      "34": 94,
+      "35": 94,
+      "36": 94,
+      "37": 94,
+      "38": 94,
+      "39": 94,
+      "40": 94,
+      "41": 94,
+      "42": 94,
+      "43": 282,
+      "44": 188,
+      "45": 188,
+      "46": 188,
+      "47": 188,
+      "48": 188,
+      "49": 188,
+      "50": 188,
+      "51": 188,
+      "52": 188,
+      "53": 188,
+      "54": 188,
+      "55": 188,
+      "56": 86,
+      "57": 105,
+      "58": 105,
+      "59": 105,
+      "60": 974,
+      "61": 86,
+      "62": 105,
+      "63": 86,
+      "64": 891,
+      "65": 105,
+      "66": 105,
+      "67": 105,
+      "68": 105,
+      "69": 105,
+      "70": 105,
+      "71": 105,
+      "72": 105,
+      "73": 105,
+      "74": 891,
+      "75": 786,
+      "76": 786,
+      "77": 786,
+      "78": 786,
+      "79": 86
     },
     "f": {
-      "0": 18,
-      "1": 1,
-      "2": 3,
-      "3": 6,
-      "4": 18,
-      "5": 7,
-      "6": 9,
-      "7": 64,
-      "8": 9,
-      "9": 61
+      "0": 492,
+      "1": 50,
+      "2": 150,
+      "3": 94,
+      "4": 282,
+      "5": 86,
+      "6": 105,
+      "7": 974,
+      "8": 105,
+      "9": 891
     },
     "b": {
       "0": [
-        4,
-        14
+        56,
+        436
       ],
       "1": [
-        1,
-        2
+        50,
+        100
       ],
       "2": [
-        2,
-        1
+        100,
+        50
       ],
       "3": [
-        6,
-        12
+        94,
+        188
       ],
       "4": [
-        12,
-        6
+        188,
+        94
       ],
       "5": [
-        9,
-        9
+        105,
+        105
       ],
       "6": [
-        9,
-        52
+        105,
+        786
       ],
       "7": [
-        52,
-        9
+        786,
+        105
       ]
     },
     "inputSourceMap": {
@@ -16057,12 +16057,12 @@
         "/home/marinep/Documents/OC/Testez-une-application-full-stack/front/src/app/features/sessions/components/list/list.component.ts"
       ],
       "sourcesContent": [
-        "<div class=\"list\">\n  <mat-card>\n    <mat-card-header fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\n      <mat-card-title class=\"m0\">Rentals available</mat-card-title>\n      <button *ngIf=\"user!.admin\" mat-raised-button color=\"primary\" routerLink=\"create\">\n        <mat-icon>add</mat-icon>\n        <span class=\"ml1\" data-testid=\"create-button\">Create</span>\n      </button>\n    </mat-card-header>\n    <div class=\"items mt2\" fxLayout=\"row wrap\" fxLayout.lt-md=\"column\">\n      <mat-card class=\"item\" *ngFor=\"let session of (sessions$ | async)\" fxFlex>\n        <mat-card-header data-testid=\"session-card\">\n          <mat-card-title>{{ session.name }}</mat-card-title>\n          <mat-card-subtitle>\n            Session on {{ session.date | date: 'longDate'}}\n          </mat-card-subtitle>\n        </mat-card-header>\n        <div mat-card-image fxLayoutAlign=\"center center\">\n          <img class=\"picture\" src=\"assets/sessions.png\" alt=\"Yoga session\">\n        </div>\n        <mat-card-content>\n          <p>\n            {{ session.description }}\n          </p>\n        </mat-card-content>\n        <mat-card-actions>\n          <button mat-raised-button color=\"primary\" [routerLink]=\"['detail',session.id]\" data-testid=\"detail-button\">\n            <mat-icon>search</mat-icon>\n            <span class=\"ml1\">Detail</span>\n          </button>\n          <button *ngIf=\"user!.admin\" mat-raised-button color=\"primary\"\n                  [routerLink]=\"['update',session.id]\">\n            <mat-icon>edit</mat-icon>\n            <span class=\"ml1\" data-testid=\"update-button\">Edit</span>\n          </button>\n        </mat-card-actions>\n      </mat-card>\n    </div>\n  </mat-card>\n</div>\n",
+        "<div class=\"list\">\r\n  <mat-card>\r\n    <mat-card-header fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\r\n      <mat-card-title class=\"m0\">Rentals available</mat-card-title>\r\n      <button *ngIf=\"user!.admin\" mat-raised-button color=\"primary\" routerLink=\"create\">\r\n        <mat-icon>add</mat-icon>\r\n        <span class=\"ml1\" data-testid=\"create-button\">Create</span>\r\n      </button>\r\n    </mat-card-header>\r\n    <div class=\"items mt2\" fxLayout=\"row wrap\" fxLayout.lt-md=\"column\">\r\n      <mat-card class=\"item\" *ngFor=\"let session of (sessions$ | async)\" fxFlex>\r\n        <mat-card-header data-testid=\"session-card\">\r\n          <mat-card-title>{{ session.name }}</mat-card-title>\r\n          <mat-card-subtitle>\r\n            Session on {{ session.date | date: 'longDate'}}\r\n          </mat-card-subtitle>\r\n        </mat-card-header>\r\n        <div mat-card-image fxLayoutAlign=\"center center\">\r\n          <img class=\"picture\" src=\"assets/sessions.png\" alt=\"Yoga session\">\r\n        </div>\r\n        <mat-card-content>\r\n          <p>\r\n            {{ session.description }}\r\n          </p>\r\n        </mat-card-content>\r\n        <mat-card-actions>\r\n          <button mat-raised-button color=\"primary\" [routerLink]=\"['detail',session.id]\" data-testid=\"detail-button\">\r\n            <mat-icon>search</mat-icon>\r\n            <span class=\"ml1\">Detail</span>\r\n          </button>\r\n          <button *ngIf=\"user!.admin\" mat-raised-button color=\"primary\"\r\n                  [routerLink]=\"['update',session.id]\">\r\n            <mat-icon>edit</mat-icon>\r\n            <span class=\"ml1\" data-testid=\"update-button\">Edit</span>\r\n          </button>\r\n        </mat-card-actions>\r\n      </mat-card>\r\n    </div>\r\n  </mat-card>\r\n</div>\r\n",
         "import { Component } from '@angular/core';\nimport { Observable } from 'rxjs';\nimport { SessionInformation } from '../../../../interfaces/sessionInformation.interface';\nimport { SessionService } from '../../../../services/session.service';\nimport { Session } from '../../interfaces/session.interface';\nimport { SessionApiService } from '../../services/session-api.service';\n\n@Component({\n  selector: 'app-list',\n  templateUrl: './list.component.html',\n  styleUrls: ['./list.component.scss']\n})\nexport class ListComponent {\n\n  public sessions$: Observable<Session[]> = this.sessionApiService.all();\n\n  constructor(\n    private sessionService: SessionService,\n    private sessionApiService: SessionApiService\n  ) { }\n\n  get user(): SessionInformation | undefined {\n    return this.sessionService.sessionInformation;\n  }\n}\n"
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "2ecd7dc9c2a4993b157f00f909f90d01547aac4f"
+    "hash": "e7b7530f71d697c3383dba0989b0a6694e901e9b"
   },
   "/home/marinep/Documents/OC/Testez-une-application-full-stack/front/src/app/features/sessions/sessions-routing.module.ts": {
     "path": "/home/marinep/Documents/OC/Testez-une-application-full-stack/front/src/app/features/sessions/sessions-routing.module.ts",
@@ -16227,22 +16227,22 @@
       }
     },
     "s": {
-      "0": 7,
-      "1": 7,
-      "2": 7,
-      "3": 7,
-      "4": 7,
-      "5": 7,
-      "6": 7
+      "0": 86,
+      "1": 86,
+      "2": 86,
+      "3": 86,
+      "4": 86,
+      "5": 86,
+      "6": 86
     },
     "f": {
-      "0": 7,
-      "1": 7
+      "0": 86,
+      "1": 86
     },
     "b": {
       "0": [
-        7,
-        7
+        86,
+        86
       ]
     },
     "inputSourceMap": {
@@ -16444,23 +16444,23 @@
       }
     },
     "s": {
-      "0": 7,
-      "1": 7,
-      "2": 7,
-      "3": 7,
-      "4": 7,
-      "5": 7,
-      "6": 7,
-      "7": 7
+      "0": 86,
+      "1": 86,
+      "2": 86,
+      "3": 86,
+      "4": 86,
+      "5": 86,
+      "6": 86,
+      "7": 86
     },
     "f": {
-      "0": 7,
-      "1": 7
+      "0": 86,
+      "1": 86
     },
     "b": {
       "0": [
-        7,
-        7
+        86,
+        86
       ]
     },
     "inputSourceMap": {
