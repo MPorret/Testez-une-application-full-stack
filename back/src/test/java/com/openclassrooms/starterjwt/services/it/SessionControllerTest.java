@@ -10,7 +10,6 @@ import com.openclassrooms.starterjwt.repository.SessionRepository;
 import com.openclassrooms.starterjwt.repository.TeacherRepository;
 import com.openclassrooms.starterjwt.repository.UserRepository;
 import com.openclassrooms.starterjwt.security.jwt.JwtUtils;
-import com.openclassrooms.starterjwt.services.SessionService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,7 +37,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @AutoConfigureMockMvc
 @Transactional
-public class SessionControllerIT {
+public class SessionControllerTest {
     @Autowired
     private MockMvc mockMvc;
     @Autowired
@@ -51,8 +50,6 @@ public class SessionControllerIT {
     private ObjectMapper objectMapper;
     @Autowired
     private SessionMapper sessionMapper;
-    @Autowired
-    private SessionService sessionService;
     @Autowired
     private SessionRepository sessionRepository;
     @Autowired

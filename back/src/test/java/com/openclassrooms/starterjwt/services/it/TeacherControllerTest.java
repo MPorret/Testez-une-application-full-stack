@@ -1,36 +1,32 @@
 package com.openclassrooms.starterjwt.services.it;
 
-import com.openclassrooms.starterjwt.dto.UserDto;
-import com.openclassrooms.starterjwt.mapper.UserMapper;
-import com.openclassrooms.starterjwt.mapper.UserMapperImpl;
+import com.openclassrooms.starterjwt.mapper.TeacherMapper;
+import com.openclassrooms.starterjwt.models.Teacher;
 import com.openclassrooms.starterjwt.models.User;
+import com.openclassrooms.starterjwt.repository.TeacherRepository;
 import com.openclassrooms.starterjwt.repository.UserRepository;
 import com.openclassrooms.starterjwt.security.jwt.JwtUtils;
-import com.openclassrooms.starterjwt.services.UserService;
+import com.openclassrooms.starterjwt.services.TeacherService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Spy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.TestingAuthenticationToken;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.transaction.annotation.Transactional;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @SpringBootTest
 @AutoConfigureMockMvc
 @Transactional
-public class UserControllerIT {
+public class TeacherControllerTest {
     @Autowired
     private MockMvc mockMvc;
     @Autowired
@@ -40,13 +36,15 @@ public class UserControllerIT {
     @Autowired
     private PasswordEncoder passwordEncoder;
     @Autowired
-    private UserService userService;
-    @Spy
-    private UserMapper userMapper = new UserMapperImpl();
+    private TeacherService teacherService;
+    @Autowired
+    private TeacherMapper teacherMapper;
+    @Autowired
+    private TeacherRepository teacherRepository;
     @Autowired
     private UserRepository userRepository;
 
-    private User user;
+    private Teacher teacher;
     private String token;
 
     @BeforeEach
@@ -58,81 +56,53 @@ public class UserControllerIT {
                 .setEmail("user@test.com")
                 .setPassword(passwordEncoder.encode("test1234"));
 
-        user = userRepository.saveAndFlush(newUser);
+        User user = userRepository.saveAndFlush(newUser);
 
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(user.getEmail(), "test1234"));
         token = jwtUtils.generateJwtToken(authentication);
     }
 
+    @BeforeEach
+    void init() {
+        Teacher newTeacher = new Teacher();
+        newTeacher.setLastName("Test")
+                .setFirstName("Teacher");
+        teacher = teacherRepository.save(newTeacher);
+    }
+
     @Test
-    void findById_shouldReturnUserDto_validId() throws Exception {
-        mockMvc.perform(get("/api/user/" + user.getId())
+    void findById_shouldReturnTeacher_validId() throws Exception {
+        mockMvc.perform(get("/api/teacher/" + teacher.getId())
                         .header("Authorization", "Bearer " + token)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect((jsonPath("$.id")).value(user.getId()));
+                .andExpect((jsonPath("$.id")).value(teacher.getId()));
     }
 
     @Test
-    void findById_shouldReturnNull_userNotExists() throws Exception {
-        mockMvc.perform(get("/api/user/467")
+    void findById_shouldReturnNull_teacherNotExists() throws Exception {
+        mockMvc.perform(get("/api/teacher/467")
                         .header("Authorization", "Bearer " + token)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound());
-    }
-
-    @Test
-    void findById_shouldReturnUnauthorized_noBearer() throws Exception {
-        mockMvc.perform(get("/api/user/" + user.getId())
-                        .header("Authorization", token)
-                        .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isUnauthorized());
-    }
-
-    @Test
-    void findById_shouldReturnUnauthorized_noToken() throws Exception {
-        mockMvc.perform(get("/api/user/" + user.getId()))
-                .andExpect(status().isUnauthorized());
     }
 
     @Test
     void findById_shouldReturnBadRequest_idInvalid() throws Exception {
-        mockMvc.perform(get("/api/user/invalidid")
+        mockMvc.perform(get("/api/teacher/invalidid")
                         .header("Authorization", "Bearer " + token)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isBadRequest());
     }
 
     @Test
-    @WithMockUser(username = "test@user.com", roles = {"USER"})
-    void delete_shouldReturnOkResponse_validId() throws Exception {
-        mockMvc.perform(delete("/api/user/" + user.getId())
+    void findAll_shouldReturnOkResponse() throws Exception {
+        mockMvc.perform(get("/api/teacher/")
                         .header("Authorization", "Bearer " + token)
                         .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk());
-    }
-
-    @Test
-    void delete_shouldReturnNotFound_userNotExists() throws Exception {
-        mockMvc.perform(delete("/api/user/467")
-                        .header("Authorization", "Bearer " + token)
-                        .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isNotFound());
-    }
-
-    @Test
-    void delete_shouldReturnBadRequest_invalidId() throws Exception {
-        mockMvc.perform(delete("/api/user/invalidid")
-                        .header("Authorization", "Bearer " + token)
-                        .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isBadRequest());
-    }
-
-    @Test
-    @WithMockUser(username = "first@user.com", roles = {"USER"})
-    void delete_shouldReturnUnauthorized_notAuthUser() throws Exception {
-        mockMvc.perform(delete("/api/user/" + user.getId()))
-                .andExpect(status().isUnauthorized());
+                .andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                .andExpect((jsonPath("$")).isArray());
     }
 }
