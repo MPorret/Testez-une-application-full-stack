@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Transactional
-public class TeacherServiceIT {
+public class TeacherServiceTest {
     @Autowired
     private TeacherRepository teacherRepository;
 
@@ -30,6 +30,12 @@ public class TeacherServiceIT {
         teacher.setFirstName("Test");
         teacher.setLastName("User");
         this.teacher = teacherRepository.save(teacher);
+    }
+
+    @Test
+    void testFindAll_shouldReturnAllTeachers (){
+        List<Teacher> allTeachers = teacherService.findAll();
+        assertEquals(1, allTeachers.size());
     }
 
     @Test

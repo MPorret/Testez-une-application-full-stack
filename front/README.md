@@ -51,9 +51,9 @@ Launching e2e test:
 
 > npm run e2e
 
-Generate coverage report (you should launch e2e test before):
+Generate coverage report:
 
-> npm run e2e:coverage
+> npm run e2e:ci
 
 Report is available here:
 
@@ -68,3 +68,7 @@ Launching test:
 for following change:
 
 > npm run test:watch
+
+Generate coverage report
+
+> ng test --coverage

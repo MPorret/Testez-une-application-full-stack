@@ -16,13 +16,12 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Transactional
-public class SessionServiceIT {
+public class SessionServiceTest {
     @Autowired
     private SessionRepository sessionRepository;
     @Autowired
@@ -47,7 +46,7 @@ public class SessionServiceIT {
         session.setName("Session for tests")
                 .setDescription("Description of session")
                 .setDate(new Date())
-                .setUsers(new ArrayList<User>());
+                .setUsers(new ArrayList<>());
         this.session = sessionRepository.save(session);
     }
 

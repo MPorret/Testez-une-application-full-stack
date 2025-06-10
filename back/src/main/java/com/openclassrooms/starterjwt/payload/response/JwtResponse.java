@@ -1,7 +1,6 @@
 package com.openclassrooms.starterjwt.payload.response;
 
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
 public class JwtResponse {

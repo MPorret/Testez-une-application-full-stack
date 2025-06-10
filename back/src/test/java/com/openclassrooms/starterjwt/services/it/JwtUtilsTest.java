@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
         "oc.app.jwtSecret=testSecretKey123456",
         "oc.app.jwtExpirationMs=3600000"
 })
-public class JwtUtilsIT {
+public class JwtUtilsTest {
     @Autowired
     private JwtUtils jwtUtils;
 

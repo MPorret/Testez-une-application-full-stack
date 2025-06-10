@@ -1,22 +1,23 @@
 package com.openclassrooms.starterjwt.services.ut;
 
 import com.openclassrooms.starterjwt.dto.UserDto;
-import com.openclassrooms.starterjwt.mapper.UserMapper;
+import com.openclassrooms.starterjwt.mapper.UserMapperImpl;
 import com.openclassrooms.starterjwt.models.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-@SpringBootTest
+@ExtendWith(MockitoExtension.class)
 public class UserMapperTests {
-    @Autowired
-    private UserMapper userMapper;
+    @InjectMocks
+    private UserMapperImpl userMapper = new UserMapperImpl();
 
     private UserDto userDto;
     private User user;
